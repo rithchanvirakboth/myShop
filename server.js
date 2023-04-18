@@ -1,17 +1,29 @@
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-require('dotenv').config();
+const express = require("express");
+const cookieParser = require("cookie-parser");
+require("dotenv").config();
+const userRoute = require("./routes/user-route");
+const mongoose = require("mongoose");
+
+const URI = process.env.MONGO_URI;
 
 const app = express();
-
-app.use(express.static(__dirname + '/public'));
-
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 app.use(cookieParser());
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+// Database connection
+mongoose.connect(URI, { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => {
+  console.log("MongoDB connected successfully");
+}).catch((err) => {
+  console.log(err);
+});
+
+// routes
+app.use("/user", userRoute);
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 }, (err) => {
   console.log(err);
 });
@@ -20,4 +32,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`app listening on port: ${port}`);
 });
-
