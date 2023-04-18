@@ -43,7 +43,6 @@ const User = new Schema(
     },
     bioDesc: {
       type: String,
-      required: true,
     },
     profilePic: {
       type: String,
@@ -51,23 +50,18 @@ const User = new Schema(
     },
     address: {
       type: String,
-      required: true,
     },
     city: {
       type: String,
-      required: true,
     },
     country: {
       type: String,
-      required: true,
     },
     zip: {
       type: String,
-      required: true,
     },
     phoneNumber: {
       type: String,
-      required: true,
     },
     role: {
       type: Number,

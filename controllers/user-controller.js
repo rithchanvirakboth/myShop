@@ -50,20 +50,16 @@ const UserController = {
 
   activateEmail: async (req, res) => {
     try {
-      const { activation_token } = req.body;
+      const {activation_token} = req.body;
       const user = jwt.verify(activation_token, process.env.ACTIVATION_TOKEN_SECRET);
 
       const { firstname, lastname, username, email, password, confirmPassword, birthDate } = user;
 
-      const checkUser = User.findOne({ username});
-      if (checkUser) {
-        return res.status(400).json({ msg: "This username already exists" });
-      }
+      const check = await User.findOne({ email });
+      if (check) return res.status(400).json({ msg: "This email already exists." });
 
-      const checkEmail = User.findOne({ email });
-      if (checkEmail) {
-        return res.status(400).json({ msg: "This email already exists" });
-      }
+      const usernameCheck = await User.findOne({ username });
+      if (usernameCheck) return res.status(400).json({ msg: "This username already exists." });
 
       const newUser = new User({
         firstname,
@@ -84,41 +80,7 @@ const UserController = {
   },
 
   login: async (req, res) => {
-    try {
-      const { email, password } = req.body;
-
-      if (!email || !password) {
-        return res.status(400).json({ msg: "Please fill in all fields" });
-      }
-
-      if(!validateEmail(email)) {
-        return res.status(400).json({ msg: "Please enter a valid email" });
-      }
-
-      // check email
-      const user = User.findOne({ email });
-      if (!user) {
-        return res.status(400).json({ msg: "This email does not exist" });
-      }
-
-      // check password
-      const passwordChecker = await bcrypt.compare(password, user.password);
-      if (!passwordChecker) {
-        return res.status(400).json({ msg: "Incorrect password" });
-      }
-
-      // if login success, create access token and refresh token
-      const refresh_token = createRefreshToken({ id: user._id });
-      res.cookie("refreshtoken", refresh_token, {
-        httpOnly: true,
-        path: "/user/refresh_token",
-        maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-      });
-
-      res.json({ msg: "Login success!" });
-    }catch(err) {
-      res.status(500).json({ msg: err.message });
-    }
+   
   },
 
   logout: async (req, res) => {
