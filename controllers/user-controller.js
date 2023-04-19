@@ -137,6 +137,12 @@ const UserController = {
   },
 
   logout: async (req, res) => {
+    try {
+      res.clearCookie("refresh_token", { path: "/user/refresh_token" });
+      return res.json({ msg: "Logged out" });
+    } catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
   },
 
   forgetPassword: async (req, res) => {
