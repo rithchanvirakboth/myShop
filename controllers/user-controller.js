@@ -244,7 +244,7 @@ const UserController = {
     } catch {
       res.status(500).json({ msg: err.message });
     }
-  }
+  },
 };
 
 function validateEmail(email) {

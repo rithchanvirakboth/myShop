@@ -2,6 +2,7 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 const userRoute = require("./routes/user-route");
+const adminRoute = require("./routes/admin-route");
 const mongoose = require("mongoose");
 
 const URI = process.env.MONGO_URI;
@@ -22,6 +23,7 @@ mongoose.connect(URI, {
 
 // routes
 app.use("/user", userRoute);
+app.use("/admin", adminRoute);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 }, (err) => {
