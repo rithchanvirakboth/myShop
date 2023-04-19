@@ -6,6 +6,7 @@ const router = require('express').Router();
 
 // Admin route
 router.get('/allUsers', authentication, adminAuth, adminController.getAllUserInfor);
-router.post('/updateRole/:id', authentication, adminAuth, adminController.UpdateRole);
 
+router.post('/updateRole/:id', authentication, adminAuth, adminController.UpdateRole);
+router.post('/updateUserInfor/:id', authentication, adminAuth, adminController.UpdateUserInfor);
 module.exports = router;

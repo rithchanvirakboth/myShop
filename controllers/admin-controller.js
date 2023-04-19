@@ -24,6 +24,49 @@ const adminController = {
     }
   },
 
+  UpdateUserInfor: async (req, res) => {
+    try {
+      const { 
+        firstname,
+        lastname,
+        username,
+        email,
+        birthDate,
+        bioDesc,
+        profilePic,
+        address,
+        city,
+        country,
+        zipcode,
+        phoneNumber
+      } = req.body;
+
+      const usernameCheck = await User.findOne({ username });
+
+      if (usernameCheck) return res.status(400).json({ msg: "This username already exists." });
+
+      await User.findOneAndUpdate({_id: req.params.id}, {
+        firstname,
+        lastname,
+        username,
+        email,
+        birthDate,
+        bioDesc,
+        profilePic,
+        address,
+        city,
+        country,
+        zipcode,
+        phoneNumber
+      });
+
+      res.json({msg: `Update user ${username} successfully`});
+    } 
+    catch (err) {
+      res.status(500).json({msg: err.message});
+    }
+  },
+
   DeleteUser: async (req, res) => {
 
   }
