@@ -123,7 +123,7 @@ const UserController = {
         return res.status(400).json({ msg: "Please login now!" });
       }
 
-      jwt.verify(refreshToken, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+      jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, user) => {
         if (err) {
           return res.status(400).json({ msg: "Please login now!" });
         }
@@ -207,7 +207,40 @@ const UserController = {
 
   updateUserInfor: async (req, res) => {
     try {
+      const { 
+        firstname,
+        lastname,
+        username,
+        email,
+        birthDate,
+        bioDesc,
+        profilePic,
+        address,
+        city,
+        country,
+        zipcode,
+        phoneNumber
+      } = req.body;
 
+      const usernameCheck = await User.findOne({ username });
+      if (usernameCheck) return res.status(400).json({ msg: "This username already exists." });
+
+      await User.findOneAndUpdate({ _id: req.user.id }, {
+        firstname,
+        lastname,
+        username,
+        email,
+        birthDate,
+        bioDesc,
+        profilePic,
+        address,
+        city,
+        country,
+        zipcode,
+        phoneNumber
+      });
+
+      res.json({ msg: "Update Success!" });
     } catch {
       res.status(500).json({ msg: err.message });
     }

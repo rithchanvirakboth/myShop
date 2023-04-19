@@ -57,7 +57,7 @@ const User = new Schema(
     country: {
       type: String,
     },
-    zip: {
+    zipcode: {
       type: String,
     },
     phoneNumber: {
