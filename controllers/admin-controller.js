@@ -68,7 +68,13 @@ const adminController = {
   },
 
   DeleteUser: async (req, res) => {
+    try {
+      await User.findByIdAndDelete(req.params.id);
 
+      res.json({msg: "Delete user successfully"});
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
   }
 
 } 

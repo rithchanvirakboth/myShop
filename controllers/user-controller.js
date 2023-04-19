@@ -245,6 +245,14 @@ const UserController = {
       res.status(500).json({ msg: err.message });
     }
   },
+
+  deactivateAccount: async (req, res) => {
+    try {
+
+    } catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
+  },
 };
 
 function validateEmail(email) {
