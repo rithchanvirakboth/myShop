@@ -146,6 +146,27 @@ const UserController = {
   },
 
   forgetPassword: async (req, res) => {
+    try {
+      const { email } = req.body;
+
+      if(!validateEmail(email)) {
+        return res.status(400).json({ msg: "Please enter a valid email" });
+      }
+      
+      const user = await User.findOne({ email });
+      if (!user) {
+        return res.status(400).json({ msg: "This email does not exist" });
+      }
+
+      const access_token = createAccessToken({ id: user._id });
+      const CLIENT_URL = process.env.CLIENT_URL;
+
+      const url = `${CLIENT_URL}/user/reset/${access_token}`;
+      sendMail(email, url, "Reset your password");
+      res.json({ msg: "Re-send the password, please check your email." });
+    }catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
   },
 
   resetPassword: async (req, res) => {
