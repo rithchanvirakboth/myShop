@@ -38,7 +38,8 @@ const adminController = {
         city,
         country,
         zipcode,
-        phoneNumber
+        phoneNumber,
+        isActive
       } = req.body;
 
       const usernameCheck = await User.findOne({ username });
@@ -57,7 +58,8 @@ const adminController = {
         city,
         country,
         zipcode,
-        phoneNumber
+        phoneNumber,
+        isActive
       });
 
       res.json({msg: `Update user ${username} successfully`});

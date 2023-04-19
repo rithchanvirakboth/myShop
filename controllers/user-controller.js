@@ -102,12 +102,17 @@ const UserController = {
         return res.status(400).json({ msg: "Incorrect credencials" });
       }
 
+      if(user.isActive !== true) {
+        await User.findOneAndUpdate({email}, {isActive: true});
+      }
+        
       const refresh_token = createRefreshToken({ id: user._id });
       res.cookie("refresh_token", refresh_token, {
         httpOnly: true,
         path: "/user/refresh_token",
         maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
       });
+
 
       res.json({ msg: "Login success!" });
     } catch (err) {
@@ -254,6 +259,7 @@ const UserController = {
         isActive
       });
 
+      res.clearCookie("refresh_token", { path: "/user/refresh_token" });
       res.json({ msg: "Account has been deactivated!" });
     } catch (err) {
       res.status(500).json({ msg: err.message });
@@ -263,7 +269,8 @@ const UserController = {
   deleteAccount: async (req, res) => {
     try {
       await User.findOneAndDelete({ _id: req.user.id });
-      
+
+      res.clearCookie("refresh_token", { path: "/user/refresh_token" });
       res.json({ msg: "Account has been deleted!" });
     } catch (err) {
       res.status(500).json({ msg: err.message });
