@@ -6,6 +6,6 @@ const router = require('express').Router();
 
 // Admin route
 router.get('/allUsers', authentication, adminAuth, adminController.getAllUserInfor);
-
+router.post('/updateRole/:id', authentication, adminAuth, adminController.UpdateRole);
 
 module.exports = router;

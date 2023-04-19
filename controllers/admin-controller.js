@@ -9,7 +9,24 @@ const adminController = {
       res.status(500).json({msg: err.message});
     }
   },
-  
+
+  UpdateRole: async (req, res) => {
+    try {
+      const { role } = req.body;
+
+      await User.findOneAndUpdate({_id: req.params.id}, {
+        role
+      });
+
+      res.json({msg: "Update role successfully"});
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
+  },
+
+  DeleteUser: async (req, res) => {
+
+  }
 
 } 
 
