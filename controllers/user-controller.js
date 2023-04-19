@@ -261,6 +261,13 @@ const UserController = {
   },
 
   deleteAccount: async (req, res) => {
+    try {
+      await User.findOneAndDelete({ _id: req.user.id });
+      
+      res.json({ msg: "Account has been deleted!" });
+    } catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
   },
 };
 

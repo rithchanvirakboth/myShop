@@ -18,5 +18,5 @@ router.get('/getUser', authentication, UserController.getUserInfo);
 router.patch('/updateUser', authentication, UserController.updateUserInfor);
 
 router.patch('/deactivateAccount', authentication, UserController.deactivateAccount);
-
+router.delete('/deleteAccount', authentication, UserController.deleteAccount);
 module.exports = router;
