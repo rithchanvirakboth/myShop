@@ -170,6 +170,30 @@ const UserController = {
   },
 
   resetPassword: async (req, res) => {
+    try {
+      const { 
+        password,
+        confirmPassword,
+      } = req.body;
+
+      if (password.length < 6) {
+        return res.status(400).json({ msg: "Password must be at least 6 characters." });
+      }
+
+      if (password !== confirmPassword) {
+        return res.status(400).json({ msg: "Password does not match." });
+      }
+
+      const passwordHash = await bcrypt.hash(password, 12);
+
+      await User.findOneAndUpdate({ _id: req.user.id }, {
+        password: passwordHash,
+        confirmPassword: passwordHash,
+      });
+      res.json({ msg: "Password successfully changed!" });
+    } catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
   },
 
 
