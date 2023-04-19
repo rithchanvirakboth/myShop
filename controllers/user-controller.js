@@ -248,10 +248,19 @@ const UserController = {
 
   deactivateAccount: async (req, res) => {
     try {
+      const { isActive } = req.body;
+      
+      await User.findOneAndUpdate({ _id: req.user.id }, {
+        isActive
+      });
 
+      res.json({ msg: "Account has been deactivated!" });
     } catch (err) {
       res.status(500).json({ msg: err.message });
     }
+  },
+
+  deleteAccount: async (req, res) => {
   },
 };
 

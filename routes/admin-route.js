@@ -6,6 +6,7 @@ const router = require('express').Router();
 
 // Admin route
 router.get('/allUsers', authentication, adminAuth, adminController.getAllUserInfor);
+router.get('/showActive', authentication, adminAuth, adminController.showActiveAccount);
 
 router.post('/updateRole/:id', authentication, adminAuth, adminController.UpdateRole);
 router.post('/updateUserInfor/:id', authentication, adminAuth, adminController.UpdateUserInfor);

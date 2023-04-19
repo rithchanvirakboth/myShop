@@ -75,6 +75,15 @@ const adminController = {
     } catch (err) {
       res.status(500).json({msg: err.message});
     }
+  },
+
+  showActiveAccount: async (req, res) => {
+    try {
+      const users = await User.find({isActive: true}).select("-password").select("-confirmPassword");
+      res.json(users);
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
   }
 
 } 

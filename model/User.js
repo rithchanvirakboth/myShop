@@ -67,6 +67,10 @@ const User = new Schema(
       type: Number,
       default: 0, // 0 = user, 1 = admin
     },
+    isActive: {
+      type: Boolean,
+      default: true,
+    }
   },
   {
     timestamps: true,
