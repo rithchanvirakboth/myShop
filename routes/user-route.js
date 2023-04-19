@@ -10,4 +10,7 @@ router.post('/activate', UserController.activateEmail);
 router.post('/forgetPassword', UserController.forgetPassword);
 router.post('/resetPassword', authentication, UserController.resetPassword);
 
+router.get('/getUsers', authentication, UserController.getUserInfo);
+router.patch('/updateUser', authentication, UserController.updateUser);
+
 module.exports = router;

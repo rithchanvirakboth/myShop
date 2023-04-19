@@ -196,7 +196,22 @@ const UserController = {
     }
   },
 
+  getUserInfo: async (req, res) => {
+    try {
+      const user = await User.findById(req.user.id).select("-password").select("-confirmPassword");
+      res.json(user);
+    } catch (err) {
+      res.status(500).json({ msg: err.message });
+    }
+  },
 
+  updateUserInfor: async (req, res) => {
+    try {
+
+    } catch {
+      res.status(500).json({ msg: err.message });
+    }
+  }
 };
 
 function validateEmail(email) {
