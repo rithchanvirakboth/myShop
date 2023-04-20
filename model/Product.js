@@ -10,12 +10,10 @@ const Product = new Schema(
     },
     productShortDesc: {
       type: String,
-      required: true,
       trim: true,
     },
     productLongDesc: {
       type: String,
-      required: true,
       trim: true,
     },
     productPrice: {
@@ -38,6 +36,11 @@ const Product = new Schema(
       required: true,
       trim: true,
     },
+    instock: {
+      type: Boolean,
+      default: true, // true = in stock, false = out of stock
+    },  
+    
   },
   {
     timestamps: true,
