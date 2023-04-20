@@ -46,7 +46,7 @@ const User = new Schema(
     },
     profilePic: {
       type: String,
-      default: "",
+      default: "https://res.cloudinary.com/dweitfbey/image/upload/v1681972811/avatar/istockphoto-1337144146-612x612_kvkcd2.png",
     },
     address: {
       type: String,
