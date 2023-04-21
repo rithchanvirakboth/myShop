@@ -23,8 +23,8 @@ const Product = new Schema(
     },
     productImg: {
       type: String,
-      required: true,
       trim: true,
+      default: "https://res.cloudinary.com/dweitfbey/image/upload/v1682048476/product/No-Image-Placeholder.svg_fjzqfx.png",
     },
     productCategory: {
       type: String,

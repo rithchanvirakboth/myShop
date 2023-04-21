@@ -11,9 +11,10 @@ const productController = {
         productImg,
         productCategory,
         productQuantity,
+        instock
       } = req.body;
 
-      if (!productName || !productShortDesc || !productPrice || !productImg || !productCategory || !productQuantity) {
+      if (!productName || !productShortDesc || !productPrice || !productCategory || !productQuantity) {
         return res.status(400).json({ msg: "Please fill in all fields" });
       }
 
@@ -25,7 +26,7 @@ const productController = {
         productImg,
         productCategory,
         productQuantity,
-        instock, // true = in stock, false = out of stock
+        instock // true = in stock, false = out of stock
       });
 
       await newProduct.save();
@@ -46,6 +47,13 @@ const productController = {
 
   }, 
   getAllProducts: async (req, res) => {
+    try {
+      const product = await Product.find();
+      
+      res.json(product);
+    }catch (err) {
+      return res.status(500).json({ msg: err.message });
+    }
   },
 
   updateProduct: async (req, res) => {
