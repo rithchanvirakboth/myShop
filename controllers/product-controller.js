@@ -68,14 +68,16 @@ const productController = {
     }
   },
   getProductsBySearch: async (req, res) => {
-    // try {
-    //   const searchString = req.params.search;
+    try {
+      const searchQuery = req.query.search;
 
+      const product = await Product.find({productName: {$regex: searchQuery, $options: "i"}});
 
-
-    // } catch (err) {
-    //   res.status(500).json({msg: err.message});
-    // }
+      if(product.length === 0) return res.status(400).json({msg: "No product found"})
+      res.json(product);
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
   },
   getProductsByFilter: async (req, res) => {
     try {
@@ -141,7 +143,7 @@ const productController = {
     try {
       const page = req.query.page;
 
-      const product = await Product.find().skip((page - 1) * 2).limit(2);
+      const product = await Product.find().skip((page - 1) * 9).limit(9);
 
 
       res.json(product);

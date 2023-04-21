@@ -11,5 +11,6 @@ router.post('/product-add', authentication, adminAuth, productController.uploadP
 router.get('/product-category', authentication, adminAuth, productController.getProductsByCategory);
 router.get('/product-filter', authentication, adminAuth, productController.getProductsByFilter);
 router.get('/product-page', authentication, adminAuth, productController.getProductPagination);
+router.get('/product-search', authentication, adminAuth, productController.getProductsBySearch);
 
 module.exports = router;
