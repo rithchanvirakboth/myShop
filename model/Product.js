@@ -39,8 +39,15 @@ const Product = new Schema(
     instock: {
       type: Boolean,
       default: true, // true = in stock, false = out of stock
-    },  
-    
+    }, 
+    productRating: {
+      type: Number,
+      default: 0, 
+    },
+    numberOfPurchased: {
+      type: Number,
+      default: 0,
+    },
   },
   {
     timestamps: true,

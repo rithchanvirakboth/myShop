@@ -8,6 +8,7 @@ const router = require('express').Router();
 router.get('/all',authentication, adminAuth, productController.getAllProducts);
 
 router.post('/product-add', authentication, adminAuth, productController.uploadProduct);
-router.get('/product-category/:category', authentication, adminAuth, productController.getProductsByCategory);
+router.get('/product-category', authentication, adminAuth, productController.getProductsByCategory);
+router.get('/product-filter', authentication, adminAuth, productController.getProductsByFilter);
 
 module.exports = router;

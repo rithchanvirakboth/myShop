@@ -38,20 +38,94 @@ const productController = {
   },
   getProductsByCategory: async (req, res) => {
     try {   
-      const reqParams = req.params.category;
-      const productCategory = await Product.find({productCategory: reqParams});
+      const reqcategory = req.query.category
 
-      res.json(productCategory);
+      if(reqcategory === "all") {
+        const product = await Product.find();
+        res.json(product);
+      }
+
+      if(reqcategory === "Hoodie"){
+        const product = await Product.find({productCategory: "Hoodie"});
+
+        res.json(product);
+      }
+
+      if(reqcategory === "T-Shirt"){
+        const product = await Product.find({productCategory: "T-Shirt"});
+
+        res.json(product);
+      }
+
+      if(reqcategory === "Jacket"){
+        const product = await Product.find({productCategory: "Jacket"});
+
+        res.json(product);
+      }
+
     } catch (err) {
       res.status(500).json({msg: err.message});
     }
   },
   getProductsBySearch: async (req, res) => {
+    // try {
+    //   const searchString = req.params.search;
 
+
+
+    // } catch (err) {
+    //   res.status(500).json({msg: err.message});
+    // }
   },
   getProductsByFilter: async (req, res) => {
+    try {
+      const reqFilter = req.query.filter;
 
+      if(reqFilter === "all") {
+        const product = await Product.find();
+        res.json(product);
+      }
+      if(reqFilter === "topRated"){
+        const product = await Product.find().sort({productRating: -1});
 
+        res.json(product);
+      }
+
+      if(reqFilter === "lowToHigh"){
+        const product = await Product.find().sort({productPrice: 1});
+
+        res.json(product);
+      }
+
+      if(reqFilter === "highToLow"){
+        const product = await Product.find().sort({productPrice: -1});
+
+        res.json(product);
+      }
+
+      if(reqFilter === "bestSale"){
+        const product = await Product.find().sort({numberOfPurchased: -1});
+
+        res.json(product);
+      }
+
+      if(reqFilter === "newest"){
+        const product = await Product.find().sort({createdAt: -1});
+
+        res.json(product);
+      }
+
+      if(reqFilter === "oldest"){
+        const product = await Product.find().sort({createdAt: 1});
+
+        res.json(product);
+      }
+      else {
+        res.json({msg: "No product found"});
+      }
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
   }, 
   getAllProducts: async (req, res) => {
     try {
