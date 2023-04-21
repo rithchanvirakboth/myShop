@@ -137,6 +137,19 @@ const productController = {
     }
   },
 
+  getProductPagination: async (req, res) => {
+    try {
+      const page = req.query.page;
+
+      const product = await Product.find().skip((page - 1) * 2).limit(2);
+
+
+      res.json(product);
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
+  },
+
   updateProduct: async (req, res) => {
 
 
