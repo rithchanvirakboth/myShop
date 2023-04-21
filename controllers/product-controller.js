@@ -37,7 +37,14 @@ const productController = {
     }
   },
   getProductsByCategory: async (req, res) => {
+    try {   
+      const reqParams = req.params.category;
+      const productCategory = await Product.find({productCategory: reqParams});
 
+      res.json(productCategory);
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
   },
   getProductsBySearch: async (req, res) => {
 
