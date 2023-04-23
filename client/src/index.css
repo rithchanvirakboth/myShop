@@ -22,3 +22,6 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&family=Roboto:wght@400;700&display=swap');
 
 /* component css Imported */
+@import url('./components/component.css');
+
+/* Color palette */
