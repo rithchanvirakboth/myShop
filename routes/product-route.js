@@ -12,5 +12,8 @@ router.get('/product-category', authentication, adminAuth, productController.get
 router.get('/product-filter', authentication, adminAuth, productController.getProductsByFilter);
 router.get('/product-page', authentication, adminAuth, productController.getProductPagination);
 router.get('/product-search', authentication, adminAuth, productController.getProductsBySearch);
+router.patch('/product-update/:id', authentication, adminAuth, productController.updateProduct);
+
+router.delete('/product-delete/:id', authentication, adminAuth, productController.deleteProduct);
 
 module.exports = router;

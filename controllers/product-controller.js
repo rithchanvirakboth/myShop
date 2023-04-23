@@ -153,8 +153,43 @@ const productController = {
   },
 
   updateProduct: async (req, res) => {
+    try {
+      const {
+        productName,
+        productShortDesc,
+        productLongDesc,
+        productPrice,
+        productImg,
+        productCategory,
+        productQuantity,
+        instock
+      } = req.body;
 
+      const newProduct = await Product.findOneAndUpdate({_id: req.params.id}, {
+        productName,
+        productShortDesc,
+        productLongDesc,
+        productPrice,
+        productImg,
+        productCategory,
+        productQuantity,
+        instock
+      });
 
+      res.json({msg: "Update product successfully!"});
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
+  },
+
+  deleteProduct: async (req, res) => {
+    try {
+      await Product.findByIdAndDelete(req.params.id);
+
+      res.json({msg: "Delete product successfully!"});
+    } catch (err) {
+      res.status(500).json({msg: err.message});
+    }
   }
 }
 
