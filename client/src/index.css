@@ -25,3 +25,11 @@ body {
 @import url('./components/component.css');
 
 /* Color palette */
+
+
+
+
+
+.content {
+ min-height: 100vh;
+}
