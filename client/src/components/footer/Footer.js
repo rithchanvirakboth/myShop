@@ -1,88 +1,188 @@
 import React from "react";
+import {
+  FOOTER_BRAND_DESC,
+  FOOTER_CONTACT,
+  FOOTER_MENU,
+  FOOTER_SERVICE,
+} from "../../shared/constant";
 
 function Footer() {
   return (
     <>
       <footer className="text-center text-lg-start bg-white text-muted">
         <section className="">
-          <div className="container text-center text-md-start mt-5">
+          <div className="container-fluid text-center text-md-start mt-5">
             <div className="row mt-3">
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4">
+
+              {/* BRAND SECTION */}
+              <div className="col-xl-3 mx-auto mb-4 mt-4 d-none d-xl-block">
+                <a
+                  href={FOOTER_BRAND_DESC.BRAND_LOGO.LINK}
+                  className="d-flex justify-content-center"
+                >
+                  <img
+                    src={FOOTER_BRAND_DESC.BRAND_LOGO.SRC}
+                    alt={FOOTER_BRAND_DESC.BRAND_LOGO.ALT}
+                    width={"150px"}
+                    height={"75px"}
+                  />
+                </a>
+                <div className="d-flex justify-content-center">
+                  <p className="mt-3 text-center">
+                    {FOOTER_BRAND_DESC.BRAND_DESC.TEXT}
+                  </p>
+                </div>
+              </div>
+
+              {/* MENU SECTION */}
+              <div className="col-md-4 col-lg-4 col-xl-3 mx-auto mb-2 mt-3 text-center">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3 text-secondary"></i>Company name
+                  {FOOTER_MENU.TITLE.NAME}
+                </h6>
+                <p >
+                  <a
+                    href={FOOTER_MENU.HOME.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_MENU.HOME.NAME}
+                  </a>
+                </p>
+                <p >
+                  <a
+                    href={FOOTER_MENU.OUR_STORE.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_MENU.OUR_STORE.NAME}
+                  </a>
+                </p>
+                <p >
+                  <a
+                    href={FOOTER_MENU.ABOUT_US.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_MENU.ABOUT_US.NAME}
+                  </a>
+                </p>
+                <p >
+                  <a
+                    href={FOOTER_MENU.CONTACT_US.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_MENU.CONTACT_US.NAME}
+                  </a>
+                </p>
+                <p >
+                  <a
+                    href={FOOTER_MENU.BLOG.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_MENU.BLOG.NAME}
+                  </a>
+                </p>
+              </div>
+
+              {/* SERVICE SECTION */}
+              <div className="col-md-4 col-lg-4 col-xl-3 d-none d-md-block d-lg-block d-xl-block mx-auto mb-4 mt-4 text-center">
+                <h6 className="text-uppercase fw-bold mb-4">
+                  {
+                    FOOTER_SERVICE.TITLE.NAME
+                  }
                 </h6>
                 <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-
-              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
-                <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Angular
+                  <a
+                    href={FOOTER_SERVICE.PURCHASE_HISTORY.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_SERVICE.PURCHASE_HISTORY.NAME}
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    React
+                  <a
+                    href={FOOTER_SERVICE.SHIPPING_AND_DELIVERY.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_SERVICE.SHIPPING_AND_DELIVERY.NAME}
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Vue
+                  <a
+                    href={FOOTER_SERVICE.CAREER_WITH_US.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_SERVICE.CAREER_WITH_US.NAME}
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Laravel
-                  </a>
-                </p>
-              </div>
-
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-4">
-                <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Pricing
+                  <a
+                    href={FOOTER_SERVICE.TEMRS_AND_CONDITIONS.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_SERVICE.TEMRS_AND_CONDITIONS.NAME}
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Settings
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Orders
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Help
+                  <a
+                    href={FOOTER_SERVICE.POLICY_AND_PRIVACY.LINK}
+                    className="text-decoration-none text-reset"
+                  >
+                    {FOOTER_SERVICE.POLICY_AND_PRIVACY.NAME}
                   </a>
                 </p>
               </div>
 
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
-                <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+              {/* CONTACT SECTION */}
+              <div className="col-md-4 col-lg-4 col-xl-3 d-none d-md-block d-lg-block d-xl-block mx-auto mb-md-0 mb-4 mt-4 text-justify">
+                <h6 className="text-uppercase fw-bold mb-4">
+                  {FOOTER_CONTACT.TITLE.NAME}
+                </h6>
                 <p>
-                  <i className="fas fa-home me-3 text-secondary"></i> New York, NY
-                  10012, US
+                  {FOOTER_CONTACT.ADDRESS.NAME} : {FOOTER_CONTACT.ADDRESS.TEXT}
+                  <a href={FOOTER_CONTACT.ADDRESS.LINK} className="text-reset ms-2">
+                    view on map
+                  </a>
                 </p>
                 <p>
-                  <i className="fas fa-envelope me-3 text-secondary"></i>
-                  info@example.com
+                  {FOOTER_CONTACT.EMAIL.NAME} : {FOOTER_CONTACT.EMAIL.TEXT}
                 </p>
                 <p>
-                  <i className="fas fa-phone me-3 text-secondary"></i> + 01 234 567
-                  88
+                  {FOOTER_CONTACT.PHONE.NAME} : {FOOTER_CONTACT.PHONE.TEXT}
                 </p>
                 <p>
-                  <i className="fas fa-print me-3 text-secondary"></i> + 01 234 567
-                  89
+                  {FOOTER_CONTACT.SOCIAL_MEDIA.NAME} :
+                  <p className="mt-2">
+                    <a
+                      href={FOOTER_CONTACT.SOCIAL_MEDIA.FACEBOOK.LINK}
+                      target="_blank"
+                      className="text-reset me-4"
+                      rel="noreferrer"
+                    >
+                      {FOOTER_CONTACT.SOCIAL_MEDIA.FACEBOOK.ICON}
+                    </a>
+                    <a
+                      href={FOOTER_CONTACT.SOCIAL_MEDIA.INSTAGRAM.LINK}
+                      target="_blank"
+                      className="text-reset me-4"
+                      rel="noreferrer"
+                    >
+                      {FOOTER_CONTACT.SOCIAL_MEDIA.INSTAGRAM.ICON}
+                    </a>
+                    <a
+                      href={FOOTER_CONTACT.SOCIAL_MEDIA.TWITTER.LINK}
+                      target="_blank"
+                      className="text-reset me-4"
+                      rel="noreferrer"
+                    >
+                      {FOOTER_CONTACT.SOCIAL_MEDIA.TWITTER.ICON}
+                    </a>
+                    <a
+                      href={FOOTER_CONTACT.SOCIAL_MEDIA.PINTEREST.LINK}
+                      target="_blank"
+                      className="text-reset me-4"
+                      rel="noreferrer"
+                    >
+                      {FOOTER_CONTACT.SOCIAL_MEDIA.PINTEREST.ICON}
+                    </a>
+                  </p>
                 </p>
               </div>
             </div>
@@ -90,9 +190,9 @@ function Footer() {
         </section>
 
         <div className="text-center p-4">
-          © 2021 Copyright:
-          <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-            MDBootstrap.com
+          © 2023 Copyright: 
+          <a className="text-reset fw-bold ms-2" href="/">
+            myShop.com
           </a>
         </div>
       </footer>
