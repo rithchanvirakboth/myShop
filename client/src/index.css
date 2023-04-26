@@ -8,11 +8,11 @@
 }
 
 body { 
-  font-family: 'cinzel', serif;
+  font-family: 'fauna one', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background-color: #f5f5f5;
+  background-color: var(--color-primary-variant-2);
 }
 
 
@@ -23,9 +23,40 @@ body {
 
 /* component css Imported */
 @import url('./components/component.css');
+@import url('./features/features.css');
 
 /* Color palette */
+:root {
+  --color-primary: #DDD0C8;
+  --color-primary-variant-1: #c3b091;
+  --color-primary-variant-2: #e2d3c4;
+  --color-primary-variant-3: #f3eded;
 
+  --color-secondary: #323232;
+  --color-secondary-variant-1: #505050;
+  --color-secondary-variant-2: #636363;
+  --color-secondary-variant-3: #8A8A8A;
+
+  --color-btn-submit-variant-1: #D3971C;
+  --color-btn-submit-variant-2: #D6AD27;
+  --color-btn-submit-variant-3: #D8C330;
+
+  --color-menu-variant-1: #BD9616;
+  --color-menu-variant-2: #D2AC1A;
+  --color-menu-variant-3: #E6C120;
+
+  --color-text-dark-variant-1: #211D0F;
+  --color-text-dark-variant-2: #423D2F;
+  --color-text-dark-variant-3: #615C4D;
+
+  --color-text-light-variant-1: #FFF;
+  --color-text-light-variant-2: #F0F0F0;
+  --color-text-light-variant-3: #C2C2C2;
+
+  --color-card-box-variant-1: #f8f8f8;
+  --color-card-box-variant-2: #e1e1e1;
+  --color-card-box-variant-3: #d1d1d1;
+}
 
 
 
@@ -33,3 +64,4 @@ body {
 .content {
  min-height: 100vh;
 }
+
