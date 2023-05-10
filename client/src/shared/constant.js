@@ -104,7 +104,7 @@ export const FOOTER_SERVICE = {
   },
   TEMRS_AND_CONDITIONS: {
     NAME: "TERMS & CONDITIONS",
-    LINK: "/terms&conditions",
+    LINK: "/terms-and-condition",
   },
   POLICY_AND_PRIVACY: {
     NAME: "POLICY & PRIVACY",

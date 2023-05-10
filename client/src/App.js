@@ -7,6 +7,7 @@ import Registerpage from "./features/authentication/register-page/register-page"
 import EmailVerify from "./features/authentication/email-verify/EmailVerify";
 import Forgetpassword from "./features/authentication/forget-password/Forget-password";
 import ResetPassword from "./features/authentication/reset-password/Reset-Password";
+import TermsAndCondition from "./features/our-service/Terms-and-Condition/Terms-and-Condition";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             <Route path="/about" element={<h1>About</h1>} />
             <Route path="/contact" element={<h1>Contact</h1>} />
             <Route path="*" element={<h1>Not Found</h1>} />
+
+            {/* Service category */}
+            <Route path="/terms-and-condition" element={<TermsAndCondition />} />
           </Routes>
         </div>
 
