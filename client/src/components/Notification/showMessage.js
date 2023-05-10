@@ -6,7 +6,7 @@ export const showSuccessMessage = (successMessage) => {
       className="alert alert-success alert-dismissible fade show"
       role="alert"
     >
-      <strong>{successMessage}</strong>
+      <strong className="content">{successMessage}</strong>
       <button
         type="button"
         className="btn-close"
@@ -23,7 +23,7 @@ export const showErrorMessage = (errorMessage) => {
       className="alert alert-danger alert-dismissible fade show"
       role="alert"
     >
-      <strong>{errorMessage}</strong> 
+      <strong className="content">{errorMessage}</strong> 
       <button
         type="button"
         className="btn-close"

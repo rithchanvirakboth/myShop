@@ -6,6 +6,7 @@ import Loginpage from "./features/authentication/login-page/login-page";
 import Registerpage from "./features/authentication/register-page/register-page";
 import EmailVerify from "./features/authentication/email-verify/EmailVerify";
 import Forgetpassword from "./features/authentication/forget-password/Forget-password";
+import ResetPassword from "./features/authentication/reset-password/Reset-Password";
 
 function App() {
   return (
@@ -26,8 +27,11 @@ function App() {
             {/* Email verify */}
             <Route path="/user/activate/:activation_token" element={<EmailVerify />} />
             
-            {/* Reset password */}
+            {/* Forget password */}
             <Route path="/forgetPassword" element={<Forgetpassword />} />
+
+            {/* Reset Password */}
+            <Route path="/user/reset/:access_token" element={<ResetPassword />} />
             {/* mainpage */}
             <Route path="/" element={<h1>Home</h1>} />
             <Route path="/about" element={<h1>About</h1>} />
