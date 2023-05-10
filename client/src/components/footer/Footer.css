@@ -1,0 +1,18 @@
+.brand-desc {
+  font-size: 15px;
+}
+
+.ms-section {
+  font-size: 15px;
+}
+
+.footer {
+  background-color: var(--color-primary-variant-2);
+}
+
+.copyright {
+  background-color: var(--color-secondary-variant-2);
+  color: var(--color-white-text);
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}

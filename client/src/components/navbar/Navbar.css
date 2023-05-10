@@ -13,8 +13,17 @@
   position: absolute;
   top: 60px;
   right: 0;
-  background-color: #fff;
+  background-color: var(--color-primary-variant-2);
   border-radius: 5px;
   border: none;
   text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-primary-variant-3);
+  transition: 0.3s ease;
+}
+
+.navbar {
+  background-color: var(--color-primary-variant-2);
 }

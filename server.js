@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const cors  = require("cors");
 const fileUpload = require("express-fileupload");
+const bodyParser = require("body-parser");
 const path = require("path");
 
 const userRoute = require("./routes/user-route");
@@ -15,6 +16,8 @@ const URI = process.env.MONGO_URI;
 
 const app = express();
 app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(cors());
 app.use(cookieParser());
 app.use(fileUpload({
@@ -32,6 +35,10 @@ mongoose.connect(URI, {
 });
 
 // routes
+app.route("/").get((req, res) => {
+  res.send("Welcome to the server");
+});
+
 app.use("/user", userRoute);
 app.use("/admin", adminRoute);
 app.use("/api", uploadRoute);

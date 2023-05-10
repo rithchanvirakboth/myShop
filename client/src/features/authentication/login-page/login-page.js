@@ -22,6 +22,10 @@ function Loginpage() {
                   <label htmlFor="password" className="form-label invisible">label</label>
                   <button type="submit" className="btn btn-submit w-100">Login</button>
                 </div>
+                <div className="mt-3 mx-3 mb-3">
+                  <span className="register">Don't have an account yet? <a href='/register' className='register-link me-1'>Register</a>now</span>
+                  <span className="forget-password float-end"><a href='/forgetPassword' className='forget-password-link'>Forget Password?</a></span>
+                </div>
               </form>
             </div>
           </div>

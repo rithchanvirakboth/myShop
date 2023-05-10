@@ -3,13 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Loginpage from "./features/authentication/login-page/login-page";
+import Registerpage from "./features/authentication/register-page/register-page";
+import EmailVerify from "./features/authentication/email-verify/EmailVerify";
+import Forgetpassword from "./features/authentication/forget-password/Forget-password";
 
 function App() {
   return (
     <Router>
       <div>
         {/* Navbar */}
-        <div className="sticky-top">
+      <div className="sticky-top">
           <Navbar />
         </div>
 
@@ -18,7 +21,13 @@ function App() {
           <Routes>
             {/* authentication */}
             <Route path="/login" element={<Loginpage />} />
+            <Route path="/register" element={<Registerpage />} />
 
+            {/* Email verify */}
+            <Route path="/user/activate/:activation_token" element={<EmailVerify />} />
+            
+            {/* Reset password */}
+            <Route path="/forgetPassword" element={<Forgetpassword />} />
             {/* mainpage */}
             <Route path="/" element={<h1>Home</h1>} />
             <Route path="/about" element={<h1>About</h1>} />

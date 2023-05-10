@@ -1,17 +1,24 @@
 .btn-submit {
   width: 55vh;
   border-radius: 10px;
-  background-color: var(--color-btn-submit-variant-2);
-  color: var(--color-text-light-variant-1);
+  background-color: var(  --color-secondary-variant-2);
+  color: var(--color-white-text);
 }
 
 .btn-submit:hover {
-  background-color: var(--color-btn-submit-variant-1);
+  background-color: var(--color-secondary-variant-3);
   transition: 0.5s ease ;
+  color: var(--color-white-text);
 }
 
 .card {
-  background-color: var(--color-card-box-variant-1);
+  background-color: #fafafa;
   border-radius: 15px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.register-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-secondary-variant-2);
 }

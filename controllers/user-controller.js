@@ -9,23 +9,29 @@ const UserController = {
       const { firstname, lastname, username, email, password, confirmPassword, birthDate } = req.body;
 
       if (!firstname || !lastname || !username || !email || !password || !confirmPassword || !birthDate) {
-        return res.status(400).json({ msg: "Please fill in all fields" });
+        return res.status(400).json({ erroMessage: "Please fill in all fields" });
       }
 
       if (password.length < 6) {
-        return res.status(400).json({ msg: "Password must be at least 6 characters long" });
+        return res.status(400).json({ erroMessage: "Password must be at least 6 characters long" });
       }
 
       if (password !== confirmPassword) {
-        return res.status(400).json({ msg: "Passwords do not match" });
+        return res.status(400).json({ erroMessage: "Passwords do not match" });
       }
 
       if(!validateEmail(email)) {
-        return res.status(400).json({ msg: "Please enter a valid email" });
-      }
+        return res.status(400).json({ erroMessage: "Please enter a valid email" });
+      } 
+      const check = await User.findOne({ email });
+      if (check) return res.status(400).json({ erroMessage: "This email already exists." });
+
+      const usernameCheck = await User.findOne({ username });
+      if (usernameCheck) return res.status(400).json({ erroMessage: "This username already exists." });
+
 
       const hashedPassword = await bcrypt.hash(password, 12);
-
+      
       const newUser = {
         firstname,
         lastname,
@@ -35,16 +41,15 @@ const UserController = {
         confirmPassword: hashedPassword,
         birthDate,
       }
-
       const activation_token = createActivationToken(newUser);
       const CLIENT_URL = process.env.CLIENT_URL;
 
       const url = `${CLIENT_URL}/user/activate/${activation_token}`;
       sendMail(email, url, "Verify your email address");
       
-      res.json({ msg: "Register Success! Please activate your email to start." });
+      res.json({ successMessage: "Register Success! Please activate your email to start." });
     } catch (err) {
-      res.status(500).json({ msg: err.message });
+      res.status(500).json({ erroMessage: err.message });
     }
   },
 
@@ -54,12 +59,6 @@ const UserController = {
       const user = jwt.verify(activation_token, process.env.ACTIVATION_TOKEN_SECRET);
 
       const { firstname, lastname, username, email, password, confirmPassword, birthDate } = user;
-
-      const check = await User.findOne({ email });
-      if (check) return res.status(400).json({ msg: "This email already exists." });
-
-      const usernameCheck = await User.findOne({ username });
-      if (usernameCheck) return res.status(400).json({ msg: "This username already exists." });
 
       const newUser = new User({
         firstname,
@@ -73,9 +72,9 @@ const UserController = {
 
       await newUser.save();
 
-      res.json({ msg: "Account has been activated!" });
+      res.json({ successMessage: "Account has been activated!" });
     } catch (err) {
-      res.status(500).json({ msg: err.message });
+      res.status(500).json({ errorMessage: "account already activated!" });
     }
   },
 

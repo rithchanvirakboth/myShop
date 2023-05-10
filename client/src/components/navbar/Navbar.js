@@ -1,10 +1,19 @@
 import React from "react";
 import { NAVBAR_MENU, PROFILE_DROPDOWN_MENU } from "../../shared/constant";
 import logo from "../assets/myShop-logo.png";
+import useLocalStorage from 'use-local-storage';
+
 function Navbar() {
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg" data-theme={theme}>
         <div className="container-fluid">
           {/* Logo big screen and bars smaller screen */}
           <div className="col-lg-3 col-md-3 col-sm-3">
@@ -232,6 +241,9 @@ function Navbar() {
                     >
                       {PROFILE_DROPDOWN_MENU.LOGOUT.NAME}
                     </a>
+                  </li>
+                  <li className="dropdown-item text-center">
+                    <button onClick={switchTheme}>Switch</button>
                   </li>
                 </ul>
               </div>

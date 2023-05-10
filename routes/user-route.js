@@ -1,4 +1,3 @@
-const adminAuth = require('../authentication/admin-auth');
 const authentication = require('../authentication/authentication');
 const UserController = require('../controllers/user-controller');
 const router = require('express').Router();
