@@ -108,7 +108,7 @@ export const FOOTER_SERVICE = {
   },
   POLICY_AND_PRIVACY: {
     NAME: "POLICY & PRIVACY",
-    LINK: "/policy&privacy",
+    LINK: "/privacy-and-policy",
   },
   CAREER_WITH_US: {
     NAME: "CAREER WITH US",

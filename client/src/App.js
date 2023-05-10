@@ -8,6 +8,7 @@ import EmailVerify from "./features/authentication/email-verify/EmailVerify";
 import Forgetpassword from "./features/authentication/forget-password/Forget-password";
 import ResetPassword from "./features/authentication/reset-password/Reset-Password";
 import TermsAndCondition from "./features/our-service/Terms-and-Condition/Terms-and-Condition";
+import PolicyAndPrivacy from "./features/our-service/Policy-and-privacy/Policy-and-privacy";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
             <Route path="/user/activate/:activation_token" element={<EmailVerify />} />
             
             {/* Forget password */}
-            <Route path="/forgetPassword" element={<Forgetpassword />} />
+            <Route path="/forget-password" element={<Forgetpassword />} />
 
             {/* Reset Password */}
             <Route path="/user/reset/:access_token" element={<ResetPassword />} />
@@ -41,6 +42,7 @@ function App() {
 
             {/* Service category */}
             <Route path="/terms-and-condition" element={<TermsAndCondition />} />
+            <Route path="/privacy-and-policy" element={<PolicyAndPrivacy />} />
           </Routes>
         </div>
 

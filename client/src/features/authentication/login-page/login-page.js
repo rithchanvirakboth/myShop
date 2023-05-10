@@ -112,7 +112,7 @@ function Loginpage() {
                     now
                   </span>
                   <span className="forget-password float-end">
-                    <a href="/forgetPassword" className="forget-password-link">
+                    <a href="/forget-password" className="forget-password-link">
                       Forget Password?
                     </a>
                   </span>
