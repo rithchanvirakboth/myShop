@@ -9,6 +9,7 @@ import Forgetpassword from "./features/authentication/forget-password/Forget-pas
 import ResetPassword from "./features/authentication/reset-password/Reset-Password";
 import TermsAndCondition from "./features/our-service/Terms-and-Condition/Terms-and-Condition";
 import PolicyAndPrivacy from "./features/our-service/Policy-and-privacy/Policy-and-privacy";
+import ContactUs from "./features/Menu/Contact-us/Contact-us";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
             {/* mainpage */}
             <Route path="/" element={<h1>Home</h1>} />
             <Route path="/about" element={<h1>About</h1>} />
-            <Route path="/contact" element={<h1>Contact</h1>} />
+            <Route path="/contact-us" element={<ContactUs />} />
             <Route path="*" element={<h1>Not Found</h1>} />
 
             {/* Service category */}

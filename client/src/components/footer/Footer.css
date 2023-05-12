@@ -16,3 +16,27 @@
   font-size: 14px;
   letter-spacing: 1.2px;
 }
+
+.social-media {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.divider {
+  outline: 1px solid #414434!important;
+}
+
+.text-reset {
+  text-decoration: none;
+}
+
+.title-content-footer:hover {
+  color: var(--color-black-text);
+  transition: 0.3s ease-in-out
+}
+
+.icons:hover {
+  color: var(--color-black-text);
+  transition: 0.3s ease-in-out
+}
+

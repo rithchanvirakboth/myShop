@@ -136,20 +136,20 @@ function Navbar() {
                       </a>
                     </li>
                     <li className="nav-item mx-2">
-                      <a className="nav-link" href={NAVBAR_MENU.ABOUT_US.NAME}>
+                      <a className="nav-link" href={NAVBAR_MENU.ABOUT_US.LINK}>
                         {NAVBAR_MENU.ABOUT_US.NAME}
                       </a>
                     </li>
                     <li className="nav-item mx-2">
                       <a
                         className="nav-link"
-                        href={NAVBAR_MENU.CONTACT_US.NAME}
+                        href={NAVBAR_MENU.CONTACT_US.LINK}
                       >
                         {NAVBAR_MENU.CONTACT_US.NAME}
                       </a>
                     </li>
                     <li className="nav-item mx-2">
-                      <a className="nav-link" href={NAVBAR_MENU.BLOG.NAME}>
+                      <a className="nav-link" href={NAVBAR_MENU.BLOG.LINK}>
                         {NAVBAR_MENU.BLOG.NAME}
                       </a>
                     </li>
