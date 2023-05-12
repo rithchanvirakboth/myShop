@@ -8,7 +8,7 @@ function Footer() {
     <>
       <footer className="footer text-center text-lg-start text-muted">
         <section className="">
-          <div className="container-fluid text-center text-md-start mt-5">
+          <div className="container-fluid text-center text-md-start">
             <div className="row">
               <div className="col-12 col-lg-12 col-md-12 col-sm-12">
                 <div className="d-flex justify-content-center">

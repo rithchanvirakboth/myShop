@@ -10,6 +10,7 @@ import ResetPassword from "./features/authentication/reset-password/Reset-Passwo
 import TermsAndCondition from "./features/our-service/Terms-and-Condition/Terms-and-Condition";
 import PolicyAndPrivacy from "./features/our-service/Policy-and-privacy/Policy-and-privacy";
 import ContactUs from "./features/Menu/Contact-us/Contact-us";
+import Jumbotron from "./components/Jumbotron/Jumbotron";
 
 function App() {
   return (
@@ -38,15 +39,17 @@ function App() {
             {/* mainpage */}
             <Route path="/" element={<h1>Home</h1>} />
             <Route path="/about" element={<h1>About</h1>} />
-            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/contact" element={<ContactUs />} />
             <Route path="*" element={<h1>Not Found</h1>} />
 
             {/* Service category */}
-            <Route path="/terms-and-condition" element={<TermsAndCondition />} />
-            <Route path="/privacy-and-policy" element={<PolicyAndPrivacy />} />
+            <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
+            <Route path="/policy-and-privacy" element={<PolicyAndPrivacy />} />
           </Routes>
         </div>
 
+        {/* Jumbotron */}
+        <Jumbotron />
         {/* Footer */}
         <Footer />
       </div>

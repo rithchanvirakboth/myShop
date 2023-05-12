@@ -3,12 +3,19 @@ import React from "react";
 function TermsAndCondition() {
   return (
     <div className="container">
-      <div className="d-flex justify-content-center">
-        <div className="card mt-4">
-          <div className="card-body">
-            <h1 className="card-title text-center">Terms and Condition</h1>
+      <div className="d-flex justify-content-start">
+        <div className="row terms-condition">
+          <div className="col-12">
+            <h1 className="">Terms and Condition</h1>
+            <div className="col-12">
+              <hr className="divider" />
+            </div>
+          </div>
+          <div className="col-12 mt-3">
             <div className="card-text">
-              <p>Our Terms and Conditions were last updated on 10th May 2023.</p>
+              <p>
+                Our Terms and Conditions were last updated on 10th May 2023.
+              </p>
               <p>
                 Please read these terms and conditions carefully before using
                 Our Service.
@@ -54,8 +61,7 @@ function TermsAndCondition() {
                 </li>
                 <li>
                   <p>
-                    <strong>"Country"</strong> refers to
-                    Cambodia.
+                    <strong>"Country"</strong> refers to Cambodia.
                   </p>
                 </li>
                 <li>
@@ -126,8 +132,8 @@ function TermsAndCondition() {
                 </li>
                 <li>
                   <p>
-                    <strong>"Website"</strong> refers to MyShop.come,
-                    accessible from http://localhost:3000/
+                    <strong>"Website"</strong> refers to MyShop.come, accessible
+                    from http://localhost:3000/
                   </p>
                 </li>
                 <li>
@@ -468,8 +474,8 @@ function TermsAndCondition() {
                 way that constitutes copyright infringement that is taking place
                 through the Service, You must submit Your notice in writing to
                 the attention of our copyright agent via email
-                (rithboth0@gmail.com) and include in Your
-                notice a detailed description of the alleged infringement.
+                (rithboth0@gmail.com) and include in Your notice a detailed
+                description of the alleged infringement.
               </p>
               <p>
                 You may be held accountable for damages (including costs and
@@ -519,10 +525,10 @@ function TermsAndCondition() {
               </ul>
               <p>
                 You can contact our copyright agent via email
-                (virakbothr99@gmail.com). Upon receipt of a
-                notification, the Company will take whatever action, in its sole
-                discretion, it deems appropriate, including removal of the
-                challenged content from the Service.
+                (virakbothr99@gmail.com). Upon receipt of a notification, the
+                Company will take whatever action, in its sole discretion, it
+                deems appropriate, including removal of the challenged content
+                from the Service.
               </p>
               <p>
                 <strong>Intellectual Property</strong>
