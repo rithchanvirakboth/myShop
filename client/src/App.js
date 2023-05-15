@@ -11,6 +11,7 @@ import TermsAndCondition from "./features/our-service/Terms-and-Condition/Terms-
 import PolicyAndPrivacy from "./features/our-service/Policy-and-privacy/Policy-and-privacy";
 import ContactUs from "./features/Menu/Contact-us/Contact-us";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
+import Career from "./features/our-service/Career-with-us/Career-with-us";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             {/* Service category */}
             <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
             <Route path="/policy-and-privacy" element={<PolicyAndPrivacy />} />
+            <Route path="/career" element={<Career />} />
           </Routes>
         </div>
 

@@ -11,6 +11,22 @@ export const PROFILE_DROPDOWN_MENU = {
     NAME: "SHIPPING & ADDRESS",
     LINK: "/shipping&address",
   },
+  WISHLIST: {
+    NAME: "WISH LIST",
+    LINK: "/wishlist",
+  },
+  ORDER_AND_DELIERY: {
+    NAME: "ORDER & DELIERY",
+    LINK: "/order-delivery",
+  },
+  PAYMENT_AND_PRICING: {
+    NAME: "PAYMENT & PRICING",
+    LINK: "/payment-pricing",
+  },
+  RETURN_AND_REFUND: {
+    NAME: "RETURN & REFUND",
+    LINK: "/return-refund",
+  },
   SETTING: {
     NAME: "SETTING",
     LINK: "/setting",
@@ -45,9 +61,9 @@ export const NAVBAR_MENU = {
     NAME: "CONTACT US",
     LINK: "/contact-us",
   },
-  BLOG: {
-    NAME: "BLOG",
-    LINK: "/blog",
+  CART: {
+    NAME: "CART",
+    LINK: "/cart",
   },
 };
 
@@ -153,9 +169,9 @@ export const FOOTER_CONTENT = {
     TITLE : "Terms Conditions",
     LINK: "/terms-and-conditions",
   },
-  BLOG : {
-    TITLE : "Blog",
-    LINK: "/blog",
+  HELP_CENTER : {
+    TITLE : "Help Center",
+    LINK: "/help-center",
   },
   CONTACT_US : {
     TITLE : "Contact",

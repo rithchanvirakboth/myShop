@@ -104,8 +104,8 @@ function Navbar() {
                           </a>
                         </li>
                         <li className="nav-item mb-3">
-                          <a className="nav-link" href={NAVBAR_MENU.BLOG.LINK}>
-                            {NAVBAR_MENU.BLOG.NAME}
+                          <a className="nav-link" href={NAVBAR_MENU.CART.LINK}>
+                            {NAVBAR_MENU.CART.NAME}
                           </a>
                         </li>
                       </ul>
@@ -149,8 +149,8 @@ function Navbar() {
                       </a>
                     </li>
                     <li className="nav-item mx-2">
-                      <a className="nav-link" href={NAVBAR_MENU.BLOG.LINK}>
-                        {NAVBAR_MENU.BLOG.NAME}
+                      <a className="nav-link" href={NAVBAR_MENU.CART.LINK}>
+                        {NAVBAR_MENU.CART.NAME}
                       </a>
                     </li>
                   </ul>
@@ -218,9 +218,41 @@ function Navbar() {
                   <li className="dropdown-item mb-2 text-center">
                     <a
                       className="nav-link"
+                      href={PROFILE_DROPDOWN_MENU.WISHLIST.LINK}
+                    >
+                      {PROFILE_DROPDOWN_MENU.WISHLIST.NAME}
+                    </a>
+                  </li>
+                  <li className="dropdown-item mb-2 text-center">
+                    <a
+                      className="nav-link"
                       href={PROFILE_DROPDOWN_MENU.SHIPPING_ADDRESS.LINK}
                     >
                       {PROFILE_DROPDOWN_MENU.SHIPPING_ADDRESS.NAME}
+                    </a>
+                  </li>
+                  <li className="dropdown-item mb-2 text-center">
+                    <a
+                      className="nav-link"
+                      href={PROFILE_DROPDOWN_MENU.ORDER_AND_DELIERY.LINK}
+                    >
+                      {PROFILE_DROPDOWN_MENU.ORDER_AND_DELIERY.NAME}
+                    </a>
+                  </li>
+                  <li className="dropdown-item mb-2 text-center">
+                    <a
+                      className="nav-link"
+                      href={PROFILE_DROPDOWN_MENU.PAYMENT_AND_PRICING.LINK}
+                    >
+                      {PROFILE_DROPDOWN_MENU.PAYMENT_AND_PRICING.NAME}
+                    </a>
+                  </li>
+                  <li className="dropdown-item mb-2 text-center">
+                    <a
+                      className="nav-link"
+                      href={PROFILE_DROPDOWN_MENU.RETURN_AND_REFUND.LINK}
+                    >
+                      {PROFILE_DROPDOWN_MENU.RETURN_AND_REFUND.NAME}
                     </a>
                   </li>
                   <li className="dropdown-item mb-2 text-center">

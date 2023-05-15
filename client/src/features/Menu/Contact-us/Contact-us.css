@@ -33,6 +33,6 @@ background-color: var(--color-primary-variant-3);
 
 .contact-us-img {
     position: relative;
-    left: -10%;
+    left: 0%;
     top: -40px;
 }
