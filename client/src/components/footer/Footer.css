@@ -18,8 +18,8 @@
 }
 
 .social-media {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .divider {
@@ -34,9 +34,14 @@
   color: var(--color-black-text);
   transition: 0.3s ease-in-out
 }
+.icons-social-media {
+  color: var(--color-secondary-variant-1);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
-.icons:hover {
+.icons-social-media:hover {
   color: var(--color-black-text);
-  transition: 0.3s ease-in-out
+  transition: 0.5s ease-in-out
 }
 

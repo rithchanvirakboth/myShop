@@ -19,3 +19,20 @@
     left: 25%;
     top: -7px;
 }
+
+.get-in-touch-container {
+background-color: var(--color-primary-variant-3);
+}
+
+.card-form-contact-us {
+    background-color: var(--color-primary-variant-3);
+    border: none;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.contact-us-img {
+    position: relative;
+    left: -10%;
+    top: -40px;
+}

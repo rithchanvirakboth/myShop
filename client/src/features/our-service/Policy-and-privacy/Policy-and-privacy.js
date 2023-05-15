@@ -3,10 +3,15 @@ import React from "react";
 function PolicyAndPrivacy() {
   return (
     <div className="container">
-      <div className="d-flex justify-content-center">
-        <div className="card mt-4">
-          <div className="card-body">
-            <h5 className="card-title text-center">Policy and Privacy</h5>
+      <div className="d-flex justify-content-start">
+        <div className="row terms-condition">
+          <div className="col-12">
+            <h1 className="">Privacy and Policy</h1>
+            <div className="col-12">
+              <hr className="divider" />
+            </div>
+          </div>
+          <div className="col-12 mt-3">
             <div className="card-text">
               <p>Our Privacy Policy was last updated on 10th, May 2023.</p>
               <p>

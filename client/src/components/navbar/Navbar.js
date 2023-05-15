@@ -13,7 +13,7 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="navbar navbar-expand-lg" data-theme={theme}>
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           {/* Logo big screen and bars smaller screen */}
           <div className="col-lg-3 col-md-3 col-sm-3">
@@ -241,9 +241,6 @@ function Navbar() {
                     >
                       {PROFILE_DROPDOWN_MENU.LOGOUT.NAME}
                     </a>
-                  </li>
-                  <li className="dropdown-item text-center">
-                    <button onClick={switchTheme}>Switch</button>
                   </li>
                 </ul>
               </div>
