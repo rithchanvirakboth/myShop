@@ -12,6 +12,7 @@ import PolicyAndPrivacy from "./features/our-service/Policy-and-privacy/Policy-a
 import ContactUs from "./features/Menu/Contact-us/Contact-us";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Career from "./features/our-service/Career-with-us/Career-with-us";
+import AboutUs from "./features/Menu/About-us/About-us";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
             <Route path="/user/reset/:access_token" element={<ResetPassword />} />
             {/* mainpage */}
             <Route path="/" element={<h1>Home</h1>} />
-            <Route path="/about" element={<h1>About</h1>} />
+            <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="*" element={<h1>Not Found</h1>} />
 

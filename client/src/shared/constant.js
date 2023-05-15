@@ -55,11 +55,11 @@ export const NAVBAR_MENU = {
   },
   ABOUT_US: {
     NAME: "ABOUT US",
-    LINK: "/about-us",
+    LINK: "/about",
   },
   CONTACT_US: {
     NAME: "CONTACT US",
-    LINK: "/contact-us",
+    LINK: "/contact",
   },
   CART: {
     NAME: "CART",

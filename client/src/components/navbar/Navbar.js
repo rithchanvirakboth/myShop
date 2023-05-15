@@ -1,16 +1,8 @@
 import React from "react";
 import { NAVBAR_MENU, PROFILE_DROPDOWN_MENU } from "../../shared/constant";
 import logo from "../assets/myShop-logo.png";
-import useLocalStorage from 'use-local-storage';
 
 function Navbar() {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-
-  const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  };
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -105,7 +97,9 @@ function Navbar() {
                         </li>
                         <li className="nav-item mb-3">
                           <a className="nav-link" href={NAVBAR_MENU.CART.LINK}>
-                            {NAVBAR_MENU.CART.NAME}
+                            <span className="cart-icon">
+                              {NAVBAR_MENU.CART.NAME}
+                            </span>
                           </a>
                         </li>
                       </ul>
