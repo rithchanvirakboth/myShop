@@ -13,6 +13,8 @@ import ContactUs from "./features/Menu/Contact-us/Contact-us";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import Career from "./features/our-service/Career-with-us/Career-with-us";
 import AboutUs from "./features/Menu/About-us/About-us";
+import WhoWeAre from "./features/Menu/About-us/components/who-we-are/who-we-are";
+import OurExperience from "./features/Menu/About-us/components/our-experience/our-experience";
 
 function App() {
   return (
@@ -48,6 +50,10 @@ function App() {
             <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
             <Route path="/policy-and-privacy" element={<PolicyAndPrivacy />} />
             <Route path="/career" element={<Career />} />
+
+            {/* Sub page */}
+            <Route path="/about/who-we-are" element={<WhoWeAre />} />
+            <Route path="/about/our-experience" element={<OurExperience />} />
           </Routes>
         </div>
 

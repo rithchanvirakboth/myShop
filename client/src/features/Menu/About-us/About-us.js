@@ -59,7 +59,7 @@ function AboutUs() {
                       your biggest fans, that's who 
                     </p>
                     <div className="d-flex justify-content-center mt-4">
-                      <a href="/myShop" className="btn btn-about-us">
+                      <a href="/about/who-we-are" className="btn btn-about-us">
                         READ MORE 
                       </a>
                     </div>
@@ -74,7 +74,7 @@ function AboutUs() {
                     </p>
                     <div className="d-flex justify-content-center mt-4">
                       <a href="/myShop" className="btn btn-about-us">
-                        READ MORE 
+                        MEET US
                       </a>
                     </div>
                   </div>
@@ -86,8 +86,8 @@ function AboutUs() {
                        there're so much about us
                     </p>
                     <div className="d-flex justify-content-center mt-4">
-                      <a href="/myShop" className="btn btn-about-us">
-                        READ MORE 
+                      <a href="/about/our-experience" className="btn btn-about-us">
+                        DISCOVER NOW 
                       </a>
                     </div>
                   </div>

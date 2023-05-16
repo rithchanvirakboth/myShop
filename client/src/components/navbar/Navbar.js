@@ -125,7 +125,7 @@ function Navbar() {
                       </a>
                     </li>
                     <li className="nav-item mx-2">
-                      <a className="nav-link" href={NAVBAR_MENU.OUR_STORE.NAME}>
+                      <a className="nav-link" href={NAVBAR_MENU.OUR_STORE.LINK}>
                         {NAVBAR_MENU.OUR_STORE.NAME}
                       </a>
                     </li>
