@@ -1,5 +1,6 @@
 @import url('./components/who-we-are/who-we-are.css');
 @import url('./components/our-experience/our-experience.css');
+@import url('./components/myshop-team/myshop-team.css');
 
 .slide-image {
   width: 100%;
@@ -9,11 +10,7 @@
 
 .about-us-card {
   background-color: var(--color-primary-variant-3);
-  width: 1000px;
-  position: absolute;
-  top: 500px;
-  left: 515px;
-  z-index: 2;
+  margin-top: 20px;
 }
 .card-aboutus {
   margin: auto;
@@ -45,12 +42,29 @@
   color: var(--color-white-text);
 }
 
+.btn-sm-about-us {
+  background-color: var(--color-primary-variant-1);
+  color: var(--color-secondary-variant-3);
+  border-radius: 5px;
+  border: none;
+  padding: 7px 20px 7px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+.btn-sm-about-us:hover {
+  background-color: var(--color-secondary-variant-2);
+  color: var(--color-white-text);
+}
+
 .content-break {
   margin-top: 75px;
 }
 
 .desc-text { 
-  margin: 20px 125px 20px 125px;
+  margin: 20px 25px 20px 25px;
   font-size: 20px;
   font-weight: 400;
   color: var(--color-black-text);
@@ -61,8 +75,4 @@
   font-size: 40px;
   font-weight: 600;
   color: var(--color-black-text);
-}
-
-.span-context {
-  margin-left: 300px;
 }

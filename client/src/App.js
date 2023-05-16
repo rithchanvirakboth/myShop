@@ -15,6 +15,7 @@ import Career from "./features/our-service/Career-with-us/Career-with-us";
 import AboutUs from "./features/Menu/About-us/About-us";
 import WhoWeAre from "./features/Menu/About-us/components/who-we-are/who-we-are";
 import OurExperience from "./features/Menu/About-us/components/our-experience/our-experience";
+import MyShopTeam from "./features/Menu/About-us/components/myshop-team/myshop-team";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
             {/* Sub page */}
             <Route path="/about/who-we-are" element={<WhoWeAre />} />
             <Route path="/about/our-experience" element={<OurExperience />} />
+            <Route path="/about/our-team" element={<MyShopTeam />} />
           </Routes>
         </div>
 

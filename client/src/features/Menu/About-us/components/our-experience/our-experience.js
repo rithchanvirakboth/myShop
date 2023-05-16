@@ -11,7 +11,7 @@ function OurExperience() {
         <div className="col-12">
           {/* TITLE */}
           <div className="d-flex justify-content-center">
-            <div className="col-6 main-title">
+            <div className="col-sm-12 col-md-12 col-lg-6 main-title">
               <h1 className="about-us-title text-center">OUR EXPERIENCE</h1>
               <p className="our-experience-message">
                 We have been in the business for over 10 years. We have been
@@ -26,7 +26,7 @@ function OurExperience() {
           </div>
           {/* FIRST SECTION */}
           <div className="d-flex justify-content-center">
-            <div className="col-6" style={{ height: "500px" }}>
+            <div className="col-sm-6 col-md-6 col-lg-6" style={{ height: "500px" }}>
               <img
                 src={OurExperienceImg1}
                 alt="our-experience"
@@ -37,14 +37,14 @@ function OurExperience() {
               <div className="our-experience-title">
                 <strong>Free delivery and returns</strong>
               </div>
-              <div className="text-justify our-experience-desc">
+              <div className="col-sm-12 col-md-12 col-lg-6 text-justify our-experience-desc">
                 We continually strive to make your experience with us as
                 seamless as possible. Or in real speak, we're on it with free
                 delivery and returns (Ts&Cs and country exclusions apply). Two
                 of your favourite ASOS things… and ours, too
               </div>
               <div className="button-see-more">
-                <a href="/about-us" className="btn btn-see-more">
+                <a href="/return-refund" className="btn btn-see-more">
                   GET TO KNOW
                 </a>
               </div>
@@ -56,7 +56,7 @@ function OurExperience() {
               <div className="our-experience-title mt-4">
                 <strong>Style Match</strong>
               </div>
-              <div className="text-justify our-experience-desc">
+              <div className="col-sm-12 col-md-12 col-lg-6 text-justify our-experience-desc">
                 We know one size doesn't fit all, so we've created a range of
                 different fits for everybody and every body. We've got your back
                 with our MyShop Brands, too. They're the ones to watch, bringing
@@ -89,7 +89,7 @@ function OurExperience() {
               <div className="our-experience-title">
                 <strong>Student discount (10% off until you graduate)</strong>
               </div>
-              <div className="text-justify our-experience-desc">
+              <div className="col-sm-12 col-md-12 col-lg-6 text-justify our-experience-desc">
               Being a student can mean you’re low on funds, but don’t worry, we got you.
               We give students 10% off all the way through to graduation. Cos your budget shouldn’t stop you being you.
               </div>
@@ -106,7 +106,7 @@ function OurExperience() {
               <div className="our-experience-title mt-4">
                 <strong>Customer care</strong>
               </div>
-              <div className="text-justify our-experience-desc">
+              <div className="col-sm-12 col-md-12 col-lg-6 text-justify our-experience-desc">
                 We're here for you, whatever you need. We've got a whole team
                 of Customer Care Advisors who are always ready to chat all
                 things ASAP. We're available 24/7, 365 days a year, so whether

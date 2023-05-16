@@ -50,7 +50,7 @@ function AboutUs() {
                 <span className="visually-hidden">Next</span>
               </button>
             </div>
-            <div className="about-us-card">
+            <div className="about-us-card d-none d-lg-block">
               <div className="row">
                 <div className="col-4">
                   <div className="card-aboutus">
@@ -73,7 +73,7 @@ function AboutUs() {
                       meet our team members 
                     </p>
                     <div className="d-flex justify-content-center mt-4">
-                      <a href="/myShop" className="btn btn-about-us">
+                      <a href="/about/our-team" className="btn btn-about-us">
                         MEET US
                       </a>
                     </div>
@@ -87,6 +87,50 @@ function AboutUs() {
                     </p>
                     <div className="d-flex justify-content-center mt-4">
                       <a href="/about/our-experience" className="btn btn-about-us">
+                        DISCOVER NOW 
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="about-us-card d-md-block d-none d-lg-none">
+              <div className="row">
+                <div className="col-4">
+                  <div className="card-aboutus">
+                    <h5 className="text-center" style={{fontSize: "17px", fontWeight: "bold"}}>WHO WE ARE</h5>
+                    <p className="text-center mt-4" style={{fontSize: "12px", fontWeight: "300", minHeight: "45px"}} >
+                      your biggest fans, that's who 
+                    </p>
+                    <div className="d-flex justify-content-center mt-4">
+                      <a href="/about/who-we-are" className="btn btn-sm-about-us">
+                        READ MORE 
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-4">
+                  <div className="card-aboutus">
+                  <h5 className="text-center" style={{fontSize: "17px", fontWeight: "bold"}}>MYSHOP TEAM</h5>
+                    <p className="text-center mt-4" style={{fontSize: "12px", fontWeight: "300", minHeight: "45px"}}>
+                      meet our team members 
+                    </p>
+                    <div className="d-flex justify-content-center mt-4">
+                      <a href="/about/our-team" className="btn btn-sm-about-us">
+                        MEET US
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-4">
+                  <div className="card-aboutus">
+                  <h5 className="text-center" style={{fontSize: "17px", fontWeight: "bold"}}>OUR EXPERIENCE</h5>
+                    <p className="text-center mt-4" style={{fontSize: "12px", fontWeight: "300", minHeight: "45px"}}>
+                       there're so much about us
+                    </p>
+                    <div className="d-flex justify-content-center mt-4">
+                      <a href="/about/our-experience" className="btn btn-sm-about-us">
                         DISCOVER NOW 
                       </a>
                     </div>

@@ -12,7 +12,7 @@ function WhoWeAre() {
         {/* First Section */}
         <div className="col-12">
           <div className="d-flex justify-content-center">
-            <div className="col-6 mt-4">
+            <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="header">
                 <h1 className="text-center title">WHO WE ARE</h1>
               </div>
@@ -39,9 +39,9 @@ function WhoWeAre() {
         </div>
 
         {/* Second Section */}
-        <div className="col-12">
+        <div className="col-sm-12 col-md-12 col-lg-12">
           <div className="d-flex justify-content-center">
-            <div className="col-6">
+            <div className="col-sm-12 col-md-12 col-lg-6">
               <div className="header">
                 <h1 className="text-center title">Fashion Democracy</h1>
               </div>
@@ -57,7 +57,7 @@ function WhoWeAre() {
             </div>
           </div>
           <div className="d-flex justify-content-center">
-            <div className="col-6 mt-4">
+            <div className="col-sm-12 col-md-12 col-lg-6 mt-4">
               <div className="content-text">
                 <h3 className="text-start mb-4">Body positivity</h3>
                 <p className="text-justify">
@@ -70,7 +70,7 @@ function WhoWeAre() {
             </div>
           </div>
           <div className="d-flex justify-content-center">
-            <div className="col-6 mt-4">
+            <div className="col-sm-12 col-md-12 col-lg-6 mt-4">
               <div className="content-text">
                 <h3 className="text-start mb-4">MyShop Marketing</h3>
                 <p className="text-justify">
