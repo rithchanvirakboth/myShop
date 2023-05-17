@@ -41,7 +41,7 @@ function OurExperience() {
                 We continually strive to make your experience with us as
                 seamless as possible. Or in real speak, we're on it with free
                 delivery and returns (Ts&Cs and country exclusions apply). Two
-                of your favourite ASOS things… and ours, too
+                of your favourite MyShop things… and ours, too
               </div>
               <div className="button-see-more">
                 <a href="/return-refund" className="btn btn-see-more">
@@ -87,15 +87,16 @@ function OurExperience() {
             </div>
             <div className="col-6 ms-4 mt-4">
               <div className="our-experience-title">
-                <strong>Student discount (10% off until you graduate)</strong>
+                <strong>Our Partnership with international brands</strong>
               </div>
               <div className="col-sm-12 col-md-12 col-lg-6 text-justify our-experience-desc">
-              Being a student can mean you’re low on funds, but don’t worry, we got you.
-              We give students 10% off all the way through to graduation. Cos your budget shouldn’t stop you being you.
+                We have been working with many international brands to bring you
+                the best products. Not only that, we also have been working with
+                many local brands to support local businesses as well.
               </div>
               <div className="button-see-more">
                 <a href="/about-us" className="btn btn-see-more">
-                  GET IT NOW
+                  View Our Partnerships
                 </a>
               </div>
             </div>

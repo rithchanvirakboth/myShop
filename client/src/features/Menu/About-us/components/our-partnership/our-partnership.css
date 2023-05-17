@@ -1,0 +1,41 @@
+.card-myShop-team {
+  height: 470px;
+  background: var(--color-primary-variant-2);
+  width: 300px;
+}
+
+.icon-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 75px;
+  height: 150px;
+  width: 150px;
+  background-color: transparent;
+}
+
+.img-icons-xs {
+  margin-top: 40px;
+  height: 73px;
+  width: 150px;
+}
+.img-icons-sm {
+  margin-top: 20px;
+  height: 110px;
+  width: 150px;
+}
+.img-icons-md {
+  height: 150px;
+  width: 150px;
+}
+
+
+
+.social-media-link {
+  text-decoration: none;
+  color: var(--color-secondary-variant-1);
+}
+
+.social-media-link:hover {
+  color: var(--color-secondary-variant-3);
+  transition: 0.5s ease;
+}

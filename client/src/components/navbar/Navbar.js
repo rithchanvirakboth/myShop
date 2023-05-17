@@ -96,9 +96,9 @@ function Navbar() {
                           </a>
                         </li>
                         <li className="nav-item mb-3">
-                          <a className="nav-link" href={NAVBAR_MENU.CART.LINK}>
+                          <a className="nav-link" href={NAVBAR_MENU.NEWS.LINK}>
                             <span className="cart-icon">
-                              {NAVBAR_MENU.CART.NAME}
+                              {NAVBAR_MENU.NEWS.NAME}
                             </span>
                           </a>
                         </li>
@@ -143,8 +143,8 @@ function Navbar() {
                       </a>
                     </li>
                     <li className="nav-item mx-2">
-                      <a className="nav-link" href={NAVBAR_MENU.CART.LINK}>
-                        {NAVBAR_MENU.CART.NAME}
+                      <a className="nav-link" href={NAVBAR_MENU.NEWS.LINK}>
+                        {NAVBAR_MENU.NEWS.NAME}
                       </a>
                     </li>
                   </ul>

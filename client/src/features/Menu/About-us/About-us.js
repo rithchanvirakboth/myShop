@@ -68,13 +68,13 @@ function AboutUs() {
 
                 <div className="col-4">
                   <div className="card-aboutus">
-                  <h5 className="card-title text-center">MYSHOP TEAM</h5>
+                  <h5 className="card-title text-center">OUR PARTNERSHIP</h5>
                     <p className="card-text text-center">
-                      meet our team members 
+                      our local and international partnership
                     </p>
                     <div className="d-flex justify-content-center mt-4">
                       <a href="/about/our-team" className="btn btn-about-us">
-                        MEET US
+                        EXPLORE NOW
                       </a>
                     </div>
                   </div>
@@ -112,13 +112,13 @@ function AboutUs() {
 
                 <div className="col-4">
                   <div className="card-aboutus">
-                  <h5 className="text-center" style={{fontSize: "17px", fontWeight: "bold"}}>MYSHOP TEAM</h5>
+                  <h5 className="text-center" style={{fontSize: "17px", fontWeight: "bold"}}>OUR PARTNERSHIP</h5>
                     <p className="text-center mt-4" style={{fontSize: "12px", fontWeight: "300", minHeight: "45px"}}>
-                      meet our team members 
+                      our local and international partnership
                     </p>
                     <div className="d-flex justify-content-center mt-4">
                       <a href="/about/our-team" className="btn btn-sm-about-us">
-                        MEET US
+                        EXPLORE NOW
                       </a>
                     </div>
                   </div>
