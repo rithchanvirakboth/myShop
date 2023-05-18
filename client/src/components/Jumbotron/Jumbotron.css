@@ -38,6 +38,15 @@
   height: 100%;
 }
 
+.logo-brand-sm {
+  margin: 0;
+  width: 100px;
+  background-color: transparent;
+  /* border: 2px solid white; */
+  display: inline-block;
+  height: 100%;
+}
+
   ::-webkit-scrollbar {
     width: 5px;
     height: 10px;

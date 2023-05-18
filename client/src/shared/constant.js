@@ -436,3 +436,89 @@ export const OUR_PARTNERSHIPS = [
   },
 ]
 
+export const HELP_CENTER_FAQ = [
+  {
+    QUESTION: "How do I place an order?",
+    ANSWER: "<span>To place an order:</span><br> 1. Add at least one item to your cart. <br> 2. Proceed to checkout. <br> 3. Enter your shipping address. <br> 4. Choose a payment method. <br> 5. Review and place your order.",
+    ID: 'flush-headingOne',
+    TARGET: '#flush-collapseOne',
+    ARIA_CONTROLS: 'flush-collapseOne',
+  },
+  {
+    QUESTION: "How do i return my product?",
+    ANSWER: "<span>To return a product:</span><br> 1. Go to your orders. <br> 2. Click on the order you wish to return. <br> 3. Click Return a product. <br> 4. Select your reason for returning the product. <br> 5. Confirm your return.",
+    ID: 'flush-headingTwo',
+    TARGET: '#flush-collapseTwo',
+    ARIA_CONTROLS: 'flush-collapseTwo',
+  },
+  {
+    QUESTION: "How do i track my order?",
+    ANSWER: "To track your order: <br> 1. Go to your <strong>Track order</strong>. <br> 2. Click Track Package next to the order you want to track. <br> 3. You can see the shipping status of your order and the estimated delivery date. <br> 4. If tracking is available, you can track your package via the Your Orders page.",
+    ID: 'flush-headingThree',
+    TARGET: '#flush-collapseThree',
+    ARIA_CONTROLS: 'flush-collapseThree',
+  },
+  {
+    QUESTION: "How do i cancel my order?",
+    ANSWER: "<span> To cancel an order:</span><br> 1. Go to Your Orders. <br> 2. Click Cancel Items. <br> 3. Select the items you want to cancel. <br> 4. Click Cancel checked items when finished.",
+    ID: 'flush-headingFour',
+    TARGET: '#flush-collapseFour',
+    ARIA_CONTROLS: 'flush-collapseFour',
+  },
+  {
+    QUESTION: "How do i reset my password?",
+    ANSWER: "<span>To reset password:</span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Reset Password</strong><br> 4. Enter your email address and click <strong>Send Email</strong> <br> 5. Check your email and click on the link provided to reset your password.",
+    ID: 'flush-headingFive',
+    TARGET: '#flush-collapseFive',
+    ARIA_CONTROLS: 'flush-collapseFive',
+  },
+  {
+    QUESTION: "How do i change email address?",
+    ANSWER: "<span>To change email address: <span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Change Email</strong><br> 4. Enter old email address so we can send you a link to change your email address. <br> 5. Check your email and click on the link provided to change your email address.",
+    ID: 'flush-headingSix',
+    TARGET: '#flush-collapseSix',
+    ARIA_CONTROLS: 'flush-collapseSix',
+  },
+  {
+    QUESTION: "How do i change my account password?",
+    ANSWER: "<span>To change password:</span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Change Password</strong><br> 4. Enter old password and new password and confirmation password. <br> 5. Click <strong>Save</strong> to save your new password.",
+    ID: 'flush-headingSeven',
+    TARGET: '#flush-collapseSeven',
+    ARIA_CONTROLS: 'flush-collapseSeven',
+  },
+  {
+    QUESTION: "How do i create an account?",
+    ANSWER: "<span>In landing page, click on the <strong>Sign Up</strong> button on the top right corner of the page. <br> Fill in your details and click <strong>Sign Up</strong> to create an account.",
+    ID: 'flush-headingEight',
+    TARGET: '#flush-collapseEight',
+    ARIA_CONTROLS: 'flush-collapseEight',
+  },
+  {
+    QUESTION: "Why can't i find my order?",
+    ANSWER: "To find your order, first make sure you purchased your order from our website. If you purchased your order from our website, make sure you are logged in to your account. If you are logged in to your account, click on the profile icons on the top right corner of the page. Click on <strong>Orders</strong> to view your orders.<br> If you still have trouble finding your order, please contact our customer service.",
+    ID: 'flush-headingNine',
+    TARGET: '#flush-collapseNine',
+    ARIA_CONTROLS: 'flush-collapseNine',
+  },
+  {
+    QUESTION: "What are the terms and conditions?",
+    ANSWER: "Terms and conditions are the legal agreements between a our service provider and customers that define the use of the service. <br> To view our terms and conditions, click <a href='http://localhost:3000/terms-and-conditions' target='_blank'>here</a>.",
+    ID: 'flush-headingTen',
+    TARGET: '#flush-collapseTen',
+    ARIA_CONTROLS: 'flush-collapseTen',
+  },
+  {
+    QUESTION: "What are the shipping options?",
+    ANSWER: "In our shop, we offer free shipping for orders above 200$. For orders below 200$, we charge a shipping fee of 10$. Our shipping options are standard shipping and express shipping by DHL and FedEx.",
+    ID: 'flush-headingEleven',
+    TARGET: '#flush-collapseEleven',
+    ARIA_CONTROLS: 'flush-collapseEleven',
+  },
+  {
+    QUESTION: "What are the payment options?",
+    ANSWER: "In our shop, we offer payment options such as credit card, debit card, PayPal, and bank transfer. We accept Visa, MasterCard, American Express, and Discover cards",
+    ID: 'flush-headingTwelve',
+    TARGET: '#flush-collapseTwelve',
+    ARIA_CONTROLS: 'flush-collapseTwelve',
+  }
+]

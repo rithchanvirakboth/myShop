@@ -16,6 +16,7 @@ import AboutUs from "./features/Menu/About-us/About-us";
 import WhoWeAre from "./features/Menu/About-us/components/who-we-are/who-we-are";
 import OurExperience from "./features/Menu/About-us/components/our-experience/our-experience";
 import OurPartnership from "./features/Menu/About-us/components/our-partnership/our-partnership";
+import HelpCenter from "./features/our-service/Help-Center/Help-center";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
             <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
             <Route path="/policy-and-privacy" element={<PolicyAndPrivacy />} />
             <Route path="/career" element={<Career />} />
+            <Route path="/help-center" element={<HelpCenter />} />
 
             {/* Sub page */}
             <Route path="/about/who-we-are" element={<WhoWeAre />} />
