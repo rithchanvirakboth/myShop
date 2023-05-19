@@ -183,7 +183,10 @@ function Navbar() {
                     />
                   </svg>
                 </button>
-                <ul className="dropdown-menu dropdown-menu-end" id="dropdown-menu-css">
+                <ul
+                  className="dropdown-menu dropdown-menu-end"
+                  id="dropdown-menu-css"
+                >
                   <li className="dropdown-item mb-2 mt-2 text-center">
                     <a
                       className="nav-link"

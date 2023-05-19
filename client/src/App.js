@@ -19,13 +19,14 @@ import OurPartnership from "./features/Menu/About-us/components/our-partnership/
 import HelpCenter from "./features/our-service/Help-Center/Help-center";
 import Profile from "./features/profile/profile";
 import ReturnRefund from "./features/Dropdown-menu/Return-and-refund/Return-and-refund";
+import PaymentAndPricing from "./features/Dropdown-menu/Payment-and-pricing/Payment-and-pricing";
 
 function App() {
   return (
     <Router>
       <div>
         {/* Navbar */}
-      <div className="sticky-top">
+        <div className="sticky-top">
           <Navbar />
         </div>
 
@@ -37,13 +38,19 @@ function App() {
             <Route path="/register" element={<Registerpage />} />
 
             {/* Email verify */}
-            <Route path="/user/activate/:activation_token" element={<EmailVerify />} />
-            
+            <Route
+              path="/user/activate/:activation_token"
+              element={<EmailVerify />}
+            />
+
             {/* Forget password */}
             <Route path="/forget-password" element={<Forgetpassword />} />
 
             {/* Reset Password */}
-            <Route path="/user/reset/:access_token" element={<ResetPassword />} />
+            <Route
+              path="/user/reset/:access_token"
+              element={<ResetPassword />}
+            />
             {/* mainpage */}
             <Route path="/" element={<h1>Home</h1>} />
             <Route path="/about" element={<AboutUs />} />
@@ -51,7 +58,10 @@ function App() {
             <Route path="*" element={<h1>Not Found</h1>} />
 
             {/* Service category */}
-            <Route path="/terms-and-conditions" element={<TermsAndCondition />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndCondition />}
+            />
             <Route path="/policy-and-privacy" element={<PolicyAndPrivacy />} />
             <Route path="/career" element={<Career />} />
             <Route path="/help-center" element={<HelpCenter />} />
@@ -59,6 +69,10 @@ function App() {
             {/* Profile Dropdown */}
             <Route path="/profile" element={<Profile />} />
             <Route path="/return-and-refund" element={<ReturnRefund />} />
+            <Route
+              path="/payment-and-pricing"
+              element={<PaymentAndPricing />}
+            />
 
             {/* Sub page */}
             <Route path="/about/who-we-are" element={<WhoWeAre />} />

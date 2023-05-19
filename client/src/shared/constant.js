@@ -59,7 +59,7 @@ export const PROFILE_DROPDOWN_MENU = {
   },
   PAYMENT_AND_PRICING: {
     NAME: "PAYMENT & PRICING",
-    LINK: "/payment-pricing",
+    LINK: "/payment-and-pricing",
   },
   RETURN_AND_REFUND: {
     NAME: "RETURN & REFUND",
