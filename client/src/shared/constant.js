@@ -63,7 +63,7 @@ export const PROFILE_DROPDOWN_MENU = {
   },
   RETURN_AND_REFUND: {
     NAME: "RETURN & REFUND",
-    LINK: "/return-refund",
+    LINK: "/return-and-refund",
   },
   SETTING: {
     NAME: "SETTING",

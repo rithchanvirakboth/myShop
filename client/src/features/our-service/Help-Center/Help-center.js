@@ -562,13 +562,13 @@ function HelpCenter() {
                 <div className="col-12">
                   <nav>
                     <div
-                      class="nav nav-tabs col-12"
+                      className="nav nav-tabs col-12"
                       id="nav-tab"
                       role="tablist"
                     >
                       <div className="col-4">
                         <button
-                          class="btn-support-topics-sm active"
+                          className="btn-support-topics-sm active"
                           id="nav-company-infor-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-company-infor"
@@ -583,7 +583,7 @@ function HelpCenter() {
                       <hr className="break" />
                       <div className="col-4">
                         <button
-                          class="btn-support-topics-sm"
+                          className="btn-support-topics-sm"
                           id="nav-account-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-account"
@@ -598,7 +598,7 @@ function HelpCenter() {
                       <hr className="break" />
                       <div className="col-4">
                         <button
-                          class="btn-support-topics-sm"
+                          className="btn-support-topics-sm"
                           id="nav-delivery-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-delivery"
@@ -615,7 +615,7 @@ function HelpCenter() {
                       </div>
                       <div className="col-3">
                         <button
-                          class="btn-support-topics-sm"
+                          className="btn-support-topics-sm"
                           id="nav-ordering-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-ordering"
@@ -630,7 +630,7 @@ function HelpCenter() {
                       <hr className="break" />
                       <div className="col-3">
                         <button
-                          class="btn-support-topics-sm"
+                          className="btn-support-topics-sm"
                           id="nav-product-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-product"
@@ -645,7 +645,7 @@ function HelpCenter() {
                       <hr className="break" />
                       <div className="col-3">
                         <button
-                          class="btn-support-topics-sm"
+                          className="btn-support-topics-sm"
                           id="nav-payment-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-payment"
@@ -660,7 +660,7 @@ function HelpCenter() {
                       <hr className="break" />
                       <div className="col-3">
                         <button
-                          class="btn-support-topics-sm"
+                          className="btn-support-topics-sm"
                           id="nav-return-refund-tab"
                           data-bs-toggle="tab"
                           data-bs-target="#nav-return-refund"
@@ -674,9 +674,9 @@ function HelpCenter() {
                       </div>
                     </div>
                   </nav>
-                  <div class="tab-content mt-3" id="nav-tabContent">
+                  <div className="tab-content mt-3" id="nav-tabContent">
                     <div
-                      class="tab-pane fade show active"
+                      className="tab-pane fade show active"
                       id="nav-company-infor"
                       role="tabpanel"
                       aria-labelledby="nav-company-infor-tab"
@@ -749,7 +749,7 @@ function HelpCenter() {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-account"
                       role="tabpanel"
                       aria-labelledby="nav-account-tab"
@@ -792,7 +792,7 @@ function HelpCenter() {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-delivery"
                       role="tabpanel"
                       aria-labelledby="nav-delivery-tab"
@@ -829,7 +829,7 @@ function HelpCenter() {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-ordering"
                       role="tabpanel"
                       aria-labelledby="nav-ordering-tab"
@@ -872,7 +872,7 @@ function HelpCenter() {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-product"
                       role="tabpanel"
                       aria-labelledby="nav-product-tab"
@@ -921,7 +921,7 @@ function HelpCenter() {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-payment"
                       role="tabpanel"
                       aria-labelledby="nav-payment-tab"
@@ -952,7 +952,7 @@ function HelpCenter() {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade"
+                      className="tab-pane fade"
                       id="nav-return-refund"
                       role="tabpanel"
                       aria-labelledby="nav-return-refund-tab"

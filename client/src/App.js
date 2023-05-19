@@ -17,6 +17,8 @@ import WhoWeAre from "./features/Menu/About-us/components/who-we-are/who-we-are"
 import OurExperience from "./features/Menu/About-us/components/our-experience/our-experience";
 import OurPartnership from "./features/Menu/About-us/components/our-partnership/our-partnership";
 import HelpCenter from "./features/our-service/Help-Center/Help-center";
+import Profile from "./features/profile/profile";
+import ReturnRefund from "./features/Dropdown-menu/Return-and-refund/Return-and-refund";
 
 function App() {
   return (
@@ -53,6 +55,10 @@ function App() {
             <Route path="/policy-and-privacy" element={<PolicyAndPrivacy />} />
             <Route path="/career" element={<Career />} />
             <Route path="/help-center" element={<HelpCenter />} />
+
+            {/* Profile Dropdown */}
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/return-and-refund" element={<ReturnRefund />} />
 
             {/* Sub page */}
             <Route path="/about/who-we-are" element={<WhoWeAre />} />
