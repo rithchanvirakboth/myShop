@@ -20,6 +20,8 @@ import HelpCenter from "./features/our-service/Help-Center/Help-center";
 import Profile from "./features/profile/profile";
 import ReturnRefund from "./features/Dropdown-menu/Return-and-refund/Return-and-refund";
 import PaymentAndPricing from "./features/Dropdown-menu/Payment-and-pricing/Payment-and-pricing";
+import Homepage from "./features/homepage/homepage";
+import NotFound from "./components/Not-found/Not-Found";
 
 function App() {
   return (
@@ -52,10 +54,10 @@ function App() {
               element={<ResetPassword />}
             />
             {/* mainpage */}
-            <Route path="/" element={<h1>Home</h1>} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="*" element={<h1>Not Found</h1>} />
+            <Route path="*" element={<NotFound />} />
 
             {/* Service category */}
             <Route

@@ -51,7 +51,7 @@
     width: 5px;
     height: 10px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
     background: transparent; 
@@ -59,7 +59,7 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--color-secondary-variant-1); 
+    background: var(--color-primary-variant-3); 
     border-radius: 20px;
   }
   
