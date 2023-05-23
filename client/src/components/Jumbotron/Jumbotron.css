@@ -1,50 +1,60 @@
 .jumbotron {
-  height: 170px;
+  height: 200px;
   margin-top: 50px;
-  background-color: var(--color-secondary-variant-1)
+  background-color: var(--color-secondary-variant-1);
+
+  @media screen and (max-width: 1300px) {
+  height: 180px;
+  }
 }
 
-.logo-jumbotron {
-  width: 100px;
-  height: 50px;
+.jumbotron-container {
+  width: 1700px;  
+  height: 180px;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (max-width: 1300px) {
+    height: 160px;
+  }
+  
 }
 
-.logo-jumbotron-lg {
-  margin-left: 15px;
-  width: 75px;
-  height: 50px;
-}
-
-
-.logo-jumbotron-sm {
-  margin-left: 15px;
-  width: 75px;
-  height: 30px;
-}
-
-.jumbotron-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 170px;
-}
-
-.logo-brand {
-  margin: 0px 20px 0px 20px;
-  width: 100px;
-  background-color: transparent;
-  /* border: 2px solid white; */
-  display: inline-block;
+.brand-logo {
+  width: 125px;
+  background-color: transparent;  
+  float: none;
   height: 100%;
+  margin: 0 0.25%;
+  display: inline-block;
+
+  @media screen and (max-width: 1300px) {
+    width: 100px;
+  }
 }
 
-.logo-brand-sm {
-  margin: 0;
-  width: 100px;
-  background-color: transparent;
-  /* border: 2px solid white; */
-  display: inline-block;
+.brand-logo-img {
+  margin-top: 40px;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.brand-logo-img-sm {
+  margin-top: 35px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.brand-logo-img-xl {
+  margin-top: 0px;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
 }
 
   ::-webkit-scrollbar {
@@ -59,7 +69,7 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--color-primary-variant-3); 
+    background: var(--color-secondary-variant-1); 
     border-radius: 20px;
   }
   

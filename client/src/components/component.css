@@ -4,3 +4,9 @@
 @import url('../components/Notification/showMessage.css');
 @import url('../components/Jumbotron/Jumbotron.css');
 @import url('./Not-found/Not-Found.css');
+@import url('./landing-page/landing-page.css');
+@import url('./category/Category.css');
+@import url('./carousel/Carousel.css');
+@import url('./menu-see-more/menu-see-more.css');
+@import url('./more-from-myshop/more-from-myshop.css');
+@import url('./join-us-now/Join-us.css');

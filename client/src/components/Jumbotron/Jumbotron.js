@@ -2,85 +2,151 @@ import React from "react";
 import nikeLogo from "../assets/Jumbotron-logo/Nike-Logo.png";
 import adidasLogo from "../assets/Jumbotron-logo/Adidas-Logo.png";
 import PumaLogo from "../assets/Jumbotron-logo/Puma-Logo.png";
-import GucciLogo from "../assets/Jumbotron-logo/Gucci-Logo.png";
 import HmLOGO from "../assets/Jumbotron-logo/H&M-Logo.png";
-import ChanelLogo from "../assets/Jumbotron-logo/Chanel-Logo.png";
+import calvinKleinLogo from "../assets/Jumbotron-logo/Calvin-Klein-Logo.png";
+import dhlLogo from "../assets/Jumbotron-logo/DHL-Logo.png";
+import fedExLogo from "../assets/Jumbotron-logo/Fedex-logo.png";
+import fendiLogo from "../assets/Jumbotron-logo/Fendi-Logo.png";
+import leviLogo from "../assets/Jumbotron-logo/Levi-Logo.png";
+import tommyHilfigerLogo from "../assets/Jumbotron-logo/Tommy-Hilfiger-Logo.png";
+import uniqloLogo from "../assets/Jumbotron-logo/Uniqlo-Logo.png";
+import zaraLogo from "../assets/Jumbotron-logo/Zara-Logo.png";
+
 
 function Jumbotron() {
   return (
-    <div className="jumbotron jumbotron-fluid">
-      <div className="container jumbotron-content">
-        <div className="brand-logo">
-          <div className="container">
-            <div className="row mt-2">
-              <div className="d-none d-lg-block">
-                <div className="col-md-12">
-                  <div className="logo-brand me-3 mb-3">
-                    <img
-                      src={nikeLogo}
-                      alt="nike-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
-                  <div className="logo-brand me-3 mb-3">
-                    <img
-                      src={PumaLogo}
-                      alt="puma-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
-                  <div className="logo-brand me-3 mb-3">
-                    <img
-                      src={adidasLogo}
-                      alt="adidas-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
-                  <div className="logo-brand me-3 mb-3 ">
-                    <img
-                      src={GucciLogo}
-                      alt="gucci-logo"
-                      className="logo-jumbotron-lg"
-                    />
-                  </div>
-                  <div className="logo-brand me-3 mb-3">
-                    <img
-                      src={HmLOGO}
-                      alt="H&M-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
-                  <div className="logo-brand me-3 mb-3">
-                    <img
-                      src={ChanelLogo}
-                      alt="Chanel-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
-                </div>
+    <div className="jumbotron">
+      <div className="d-flex justify-content-center">
+        <div className="jumbotron-container mt-3">
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={nikeLogo}
+                  alt="nike-logo"
+                  className="brand-logo-img"
+                />
               </div>
-              <div className="d-block d-lg-none">
-              <div className="logo-brand-sm mx-3">
-                    <img
-                      src={nikeLogo}
-                      alt="nike-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
-                  <div className="logo-brand-sm mx-3">
-                    <img
-                      src={PumaLogo}
-                      alt="puma-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
-                  <div className="logo-brand-sm mx-3">
-                    <img
-                      src={adidasLogo}
-                      alt="adidas-logo"
-                      className="logo-jumbotron"
-                    />
-                  </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={adidasLogo}
+                  alt="adidas-logo"
+                  className="brand-logo-img-sm"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={PumaLogo}
+                  alt="puma-logo"
+                  className="brand-logo-img"
+                  />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={dhlLogo}
+                  alt="dhl-logo"
+                  className="brand-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={fedExLogo}
+                  alt="fedEx-logo"
+                  className="brand-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={calvinKleinLogo}
+                  alt="calvin-klein-logo"
+                  className="brand-logo-img-xl"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={fendiLogo}
+                  alt="fendi-logo"
+                  className="brand-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={tommyHilfigerLogo}
+                  alt="tommy-hilfiger-logo"
+                  className="brand-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={leviLogo}
+                  alt="levi-logo"
+                  className="brand-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={zaraLogo}
+                  alt="zara-logo"
+                  className="brand-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={uniqloLogo}
+                  alt="uniqlo-logo"
+                  className="brand-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="brand-logo mx-4">
+            <div className="brand-logo-card">
+              <div className="d-flex justify-content-center">
+                <img
+                  src={HmLOGO}
+                  alt="hm-logo"
+                  className="brand-logo-img"
+                />
               </div>
             </div>
           </div>

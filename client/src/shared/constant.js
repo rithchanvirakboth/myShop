@@ -4,7 +4,7 @@ import feDexLogo from "../components/assets/Brands/Fedex-logo.png";
 import adidasLogo from "../components/assets/Brands/Adidas-Logo.png";
 import PumaLogo from "../components/assets/Brands/Puma-Logo.png";
 import GucciLogo from "../components/assets/Brands/Gucci-Logo.png";
-import reebokLogo  from "../components/assets/Brands/Reebok-Logo.png";
+import reebokLogo from "../components/assets/Brands/Reebok-Logo.png";
 import underArmourLogo from "../components/assets/Brands/Under-Armour-Logo.png";
 import versaceLogo from "../components/assets/Brands/Versace-Logo.png";
 import hugoBossLogo from "../components/assets/Brands/Hugo-Boss-Logo.png";
@@ -35,6 +35,9 @@ import timerlandLogo from "../components/assets/Brands/Timberland-Logo.png";
 import filaLogo from "../components/assets/Brands/Fila-Logo.png";
 import givenchyLogo from "../components/assets/Brands/Givenchy-Logo.png";
 
+const EXCLUSIVE = "EXCLUSIVE";
+const NON_EXCLUSIVE = "NON_EXCLUSIVE";
+const SEE_ALL = "SEE_ALL";
 
 export const PROFILE_DROPDOWN_MENU = {
   PROFILE: {
@@ -191,334 +194,444 @@ export const FOOTER_CONTACT = {
 };
 
 export const FOOTER_CONTENT = {
-  ABOUT : {
-    TITLE : "About",
+  ABOUT: {
+    TITLE: "About",
     LINK: "/about",
   },
-  CAREER : {
-    TITLE : "Career",
+  CAREER: {
+    TITLE: "Career",
     LINK: "/career",
   },
-  POLICY_AND_PRIVACY : {
-    TITLE : "Policy & Privacy",
+  POLICY_AND_PRIVACY: {
+    TITLE: "Policy & Privacy",
     LINK: "/policy-and-privacy",
   },
-  TERMS_AND_CONDITIONS : {
-    TITLE : "Terms Conditions",
+  TERMS_AND_CONDITIONS: {
+    TITLE: "Terms Conditions",
     LINK: "/terms-and-conditions",
   },
-  HELP_CENTER : {
-    TITLE : "Help Center",
+  HELP_CENTER: {
+    TITLE: "Help Center",
     LINK: "/help-center",
   },
-  CONTACT_US : {
-    TITLE : "Contact",
+  CONTACT_US: {
+    TITLE: "Contact",
     LINK: "/contact",
   },
-}
+};
 
 export const OUR_PARTNERSHIPS = [
   {
+    TYPE: EXCLUSIVE,
     NAME: "DHL",
     LOGO: dhlLogo,
     DESC: "DHL is the global market leader in the logistics industry that expertise in international parcel and rail transportation services to its customers.",
-    CLASSNAME: 'img-icons-md'
+    CLASSNAME: "img-icons-md",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "FEDEX",
     LOGO: feDexLogo,
     DESC: "FedEx connects people and possibilities through our worldwide portfolio of shipping, transportation, e-commerce and business services. ",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "NIKE",
     LOGO: nikeLogo,
     DESC: "Nike is the world's leading innovator in athletic footwear, apparel, equipment and accessories. ",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "ADIDAS",
     LOGO: adidasLogo,
     DESC: "Adidas is a German multinational corporation, founded and headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "PUMA",
     LOGO: PumaLogo,
     DESC: "PUMA is one of the world’s leading sports brands, designing, developing, selling and marketing footwear, apparel and accessories.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "REEBOK",
     LOGO: reebokLogo,
     DESC: "Reebok is an American-inspired global brand with a deep fitness heritage and a clear mission: To be the best fitness brand in the world.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "UNDER ARMOUR",
     LOGO: underArmourLogo,
     DESC: "Under Armour, Inc. is an American sports equipment company that manufactures footwear, sports and casual apparel.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "GUCCI",
     LOGO: GucciLogo,
     DESC: "Gucci is a luxury brand of fashion house that produce lines include handbags, ready-to-wear, shoes and accessories, makeup, fragrances, and home decoration.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "VERSACE",
     LOGO: versaceLogo,
     DESC: "Versace is an Italian luxury fashion company and trade name founded by Gianni Versace in 1978.",
-    CLASSNAME: 'img-icons-md'
+    CLASSNAME: "img-icons-md",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "ARMANI",
     LOGO: armaniLogo,
     DESC: "Giorgio Armani S.p.A. is an Italian luxury fashion house which designs and distributes couture, ready-to-wear, leather goods, shoes, watches, jewelry and accessories",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "HUGO BOSS",
     LOGO: hugoBossLogo,
     DESC: "Hugo Boss is a German luxury fashion house headquartered in Metzingen, Baden-Württemberg. ",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "BURBERRY",
     LOGO: burberryLogo,
     DESC: "Burberry Group is a British luxury fashion house headquartered in London, England. It currently designs and distributes ready to wear.",
-    CLASSNAME: 'img-icons-md'
+    CLASSNAME: "img-icons-md",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "CALVIN KLEIN",
     LOGO: calvinKleinLogo,
     DESC: "Calvin Klein Inc. is an American fashion house established in 1968. It specializes in leather, lifestyle accessories, home furnishings, perfumery, etc.",
-    CLASSNAME: 'img-icons-md'
+    CLASSNAME: "img-icons-md",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "CHANEL",
     LOGO: chanelLogo,
     DESC: "Chanel is a French luxury fashion house by Coco Chanel in Paris and privately owned by the Wertheimer family and has been headquartered in London.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "DIOR",
     LOGO: diorLogo,
     DESC: "Christian Dior SE, commonly known as Dior, is a French luxury company controlled by French businessman Bernard Arnault, who is the world's largest luxury group.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "FENDI",
     LOGO: fendiLogo,
     DESC: "Fendi is an Italian luxury fashion house producing fur, ready-to-wear, leather goods, shoes, fragrances, eyewear, timepieces and accessories.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "HERMES",
     LOGO: hermesLogo,
     DESC: "Hermès S.A., or simply Hermès, is a French high fashion luxury goods manufacturer established in 1837. It specializes in leather, lifestyle accessories",
-    CLASSNAME: 'img-icons-md'
+    CLASSNAME: "img-icons-md",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "LOUIS VUITTON",
     LOGO: louisVuittonLogo,
     DESC: "Louis Vuitton, commonly known as Louis Vuitton or shortened to LV, is a French fashion house and luxury goods company founded in 1854 by Louis Vuitton.",
-    CLASSNAME: 'img-icons-md'
+    CLASSNAME: "img-icons-md",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "PRADA",
-    LOGO: pradaLogo, 
+    LOGO: pradaLogo,
     DESC: "Prada S.p.A. is an Italian luxury fashion house that was founded in 1913 by Mario Prada. It specializes in leather handbags, ready-to-wear, perfumes and accessories.",
-    CLASSNAME: 'img-icons-md'
+    CLASSNAME: "img-icons-md",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "RALPH LAUREN",
-    LOGO: ralphLaurenLogo, 
+    LOGO: ralphLaurenLogo,
     DESC: "Ralph Lauren is an American fashion company producing products ranging from the mid-range to the luxury segments.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "TOMMY HILFIGER",
     LOGO: tommyHilfigerLogo,
     DESC: "Tommy Hilfiger Inc., is an American premium clothing company, manufacturing apparel, footwear, accessories, fragrances and home furnishings.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "Levi's",
-    LOGO: leviLogo, 
+    LOGO: leviLogo,
     DESC: "Levi's is an American clothing company known worldwide for its Levi's brand of denim jeans",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "ZARA",
-    LOGO: zaraLogo, 
+    LOGO: zaraLogo,
     DESC: "Zara SA is a Spanish company specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "H&M",
     LOGO: hmLogo,
     DESC: "H&M is a multinational clothing company based in Sweden that focuses on fast-fashion clothing for men, women, teenagers, and children.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: EXCLUSIVE,
     NAME: "UNIQLO",
     LOGO: uniqloLogo,
     DESC: "Uniqlo Co., Ltd. is a Japanese casual wear designer, manufacturer and retailer. Uniqlo operates in Japan and several other countries.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "GAP",
-    LOGO: gapLogo, 
+    LOGO: gapLogo,
     DESC: "The Gap, Inc., commonly known as Gap Inc. or Gap, is an American worldwide clothing and accessories retailer.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "LA COSTE",
     LOGO: lacosteLogo,
     DESC: "Lacoste is a French clothing company by tennis player René Lacoste and André Gillier. It sells clothing, footwear, sportswear, perfume, towels and watches.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "FOREVER 21",
-    LOGO: forever21Logo, 
+    LOGO: forever21Logo,
     DESC: "Forever 21, stylized as FOREVER 21, is an American fast fashion retailer headquartered in Los Angeles, California.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "FBT",
     LOGO: fbtLogo,
     DESC: "FBT is a Thai sportswear company. It is the largest sportswear company in Thailand, with a 50% market share.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "BALENCIAGA",
     LOGO: balenciagaLogo,
     DESC: "Balenciaga produces ready-to-wear footwear, handbags, and accessories, and licenses its name and branding to Coty for fragrances.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "NEW BALANCE",
     LOGO: newBalanceLogo,
     DESC: "New Balance Athletics, Inc is an American multinational corporation based in the Boston, Massachusetts area.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "CONVERSE",
     LOGO: converseLogo,
     DESC: "Converse is an American shoe company that primarily produces skating shoes and lifestyle brand footwear and apparel.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "VANS",
     LOGO: vansLogo,
     DESC: "Vans is an American manufacturer of skateboarding shoes and related apparel, based in Santa Ana, California and owned by VF Corporation.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "TIMBERLAND",
     LOGO: timerlandLogo,
     DESC: "Timberland LLC is an American manufacturer and retailer of outdoors wear, with a focus on footwear. It is owned by VF Corporation.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "FILA",
     LOGO: filaLogo,
     DESC: "Fila, Inc. is a South Korean sporting goods company. It is one of the world's largest sportswear manufacturers.",
-    CLASSNAME: 'img-icons-xs'
+    CLASSNAME: "img-icons-xs",
   },
   {
+    TYPE: NON_EXCLUSIVE,
     NAME: "Givenchy",
     LOGO: givenchyLogo,
     DESC: "Givenchy is a French luxury fashion and perfume house. It hosts the brand of haute couture clothing, accessories and Parfums Givenchy.",
-    CLASSNAME: 'img-icons-sm'
+    CLASSNAME: "img-icons-sm",
   },
-]
+];
 
 export const HELP_CENTER_FAQ = [
   {
     QUESTION: "How do I place an order?",
-    ANSWER: "<span>To place an order:</span><br> 1. Add at least one item to your cart. <br> 2. Proceed to checkout. <br> 3. Enter your shipping address. <br> 4. Choose a payment method. <br> 5. Review and place your order.",
-    ID: 'flush-headingOne',
-    TARGET: '#flush-collapseOne',
-    ARIA_CONTROLS: 'flush-collapseOne',
+    ANSWER:
+      "<span>To place an order:</span><br> 1. Add at least one item to your cart. <br> 2. Proceed to checkout. <br> 3. Enter your shipping address. <br> 4. Choose a payment method. <br> 5. Review and place your order.",
+    ID: "flush-headingOne",
+    TARGET: "#flush-collapseOne",
+    ARIA_CONTROLS: "flush-collapseOne",
   },
   {
     QUESTION: "How do i return my product?",
-    ANSWER: "<span>To return a product:</span><br> 1. Go to your orders. <br> 2. Click on the order you wish to return. <br> 3. Click Return a product. <br> 4. Select your reason for returning the product. <br> 5. Confirm your return.",
-    ID: 'flush-headingTwo',
-    TARGET: '#flush-collapseTwo',
-    ARIA_CONTROLS: 'flush-collapseTwo',
+    ANSWER:
+      "<span>To return a product:</span><br> 1. Go to your orders. <br> 2. Click on the order you wish to return. <br> 3. Click Return a product. <br> 4. Select your reason for returning the product. <br> 5. Confirm your return.",
+    ID: "flush-headingTwo",
+    TARGET: "#flush-collapseTwo",
+    ARIA_CONTROLS: "flush-collapseTwo",
   },
   {
     QUESTION: "How do i track my order?",
-    ANSWER: "To track your order: <br> 1. Go to your <strong>Track order</strong>. <br> 2. Click Track Package next to the order you want to track. <br> 3. You can see the shipping status of your order and the estimated delivery date. <br> 4. If tracking is available, you can track your package via the Your Orders page.",
-    ID: 'flush-headingThree',
-    TARGET: '#flush-collapseThree',
-    ARIA_CONTROLS: 'flush-collapseThree',
+    ANSWER:
+      "To track your order: <br> 1. Go to your <strong>Track order</strong>. <br> 2. Click Track Package next to the order you want to track. <br> 3. You can see the shipping status of your order and the estimated delivery date. <br> 4. If tracking is available, you can track your package via the Your Orders page.",
+    ID: "flush-headingThree",
+    TARGET: "#flush-collapseThree",
+    ARIA_CONTROLS: "flush-collapseThree",
   },
   {
     QUESTION: "How do i cancel my order?",
-    ANSWER: "<span> To cancel an order:</span><br> 1. Go to Your Orders. <br> 2. Click Cancel Items. <br> 3. Select the items you want to cancel. <br> 4. Click Cancel checked items when finished.",
-    ID: 'flush-headingFour',
-    TARGET: '#flush-collapseFour',
-    ARIA_CONTROLS: 'flush-collapseFour',
+    ANSWER:
+      "<span> To cancel an order:</span><br> 1. Go to Your Orders. <br> 2. Click Cancel Items. <br> 3. Select the items you want to cancel. <br> 4. Click Cancel checked items when finished.",
+    ID: "flush-headingFour",
+    TARGET: "#flush-collapseFour",
+    ARIA_CONTROLS: "flush-collapseFour",
   },
   {
     QUESTION: "How do i reset my password?",
-    ANSWER: "<span>To reset password:</span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Reset Password</strong><br> 4. Enter your email address and click <strong>Send Email</strong> <br> 5. Check your email and click on the link provided to reset your password.",
-    ID: 'flush-headingFive',
-    TARGET: '#flush-collapseFive',
-    ARIA_CONTROLS: 'flush-collapseFive',
+    ANSWER:
+      "<span>To reset password:</span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Reset Password</strong><br> 4. Enter your email address and click <strong>Send Email</strong> <br> 5. Check your email and click on the link provided to reset your password.",
+    ID: "flush-headingFive",
+    TARGET: "#flush-collapseFive",
+    ARIA_CONTROLS: "flush-collapseFive",
   },
   {
     QUESTION: "How do i change email address?",
-    ANSWER: "<span>To change email address: <span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Change Email</strong><br> 4. Enter old email address so we can send you a link to change your email address. <br> 5. Check your email and click on the link provided to change your email address.",
-    ID: 'flush-headingSix',
-    TARGET: '#flush-collapseSix',
-    ARIA_CONTROLS: 'flush-collapseSix',
+    ANSWER:
+      "<span>To change email address: <span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Change Email</strong><br> 4. Enter old email address so we can send you a link to change your email address. <br> 5. Check your email and click on the link provided to change your email address.",
+    ID: "flush-headingSix",
+    TARGET: "#flush-collapseSix",
+    ARIA_CONTROLS: "flush-collapseSix",
   },
   {
     QUESTION: "How do i change my account password?",
-    ANSWER: "<span>To change password:</span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Change Password</strong><br> 4. Enter old password and new password and confirmation password. <br> 5. Click <strong>Save</strong> to save your new password.",
-    ID: 'flush-headingSeven',
-    TARGET: '#flush-collapseSeven',
-    ARIA_CONTROLS: 'flush-collapseSeven',
+    ANSWER:
+      "<span>To change password:</span><br> 1. Click on the profile icons on the top right corner of the page. <br> 2. Click on the <strong>Settings</strong> <br> 3. Click on the <strong>Change Password</strong><br> 4. Enter old password and new password and confirmation password. <br> 5. Click <strong>Save</strong> to save your new password.",
+    ID: "flush-headingSeven",
+    TARGET: "#flush-collapseSeven",
+    ARIA_CONTROLS: "flush-collapseSeven",
   },
   {
     QUESTION: "How do i create an account?",
-    ANSWER: "<span>In landing page, click on the <strong>Sign Up</strong> button on the top right corner of the page. <br> Fill in your details and click <strong>Sign Up</strong> to create an account.",
-    ID: 'flush-headingEight',
-    TARGET: '#flush-collapseEight',
-    ARIA_CONTROLS: 'flush-collapseEight',
+    ANSWER:
+      "<span>In landing page, click on the <strong>Sign Up</strong> button on the top right corner of the page. <br> Fill in your details and click <strong>Sign Up</strong> to create an account.",
+    ID: "flush-headingEight",
+    TARGET: "#flush-collapseEight",
+    ARIA_CONTROLS: "flush-collapseEight",
   },
   {
     QUESTION: "Why can't i find my order?",
-    ANSWER: "To find your order, first make sure you purchased your order from our website. If you purchased your order from our website, make sure you are logged in to your account. If you are logged in to your account, click on the profile icons on the top right corner of the page. Click on <strong>Orders</strong> to view your orders.<br> If you still have trouble finding your order, please contact our customer service.",
-    ID: 'flush-headingNine',
-    TARGET: '#flush-collapseNine',
-    ARIA_CONTROLS: 'flush-collapseNine',
+    ANSWER:
+      "To find your order, first make sure you purchased your order from our website. If you purchased your order from our website, make sure you are logged in to your account. If you are logged in to your account, click on the profile icons on the top right corner of the page. Click on <strong>Orders</strong> to view your orders.<br> If you still have trouble finding your order, please contact our customer service.",
+    ID: "flush-headingNine",
+    TARGET: "#flush-collapseNine",
+    ARIA_CONTROLS: "flush-collapseNine",
   },
   {
     QUESTION: "What are the terms and conditions?",
-    ANSWER: "Terms and conditions are the legal agreements between a our service provider and customers that define the use of the service. <br> To view our terms and conditions, click <a href='http://localhost:3000/terms-and-conditions' target='_blank'>here</a>.",
-    ID: 'flush-headingTen',
-    TARGET: '#flush-collapseTen',
-    ARIA_CONTROLS: 'flush-collapseTen',
+    ANSWER:
+      "Terms and conditions are the legal agreements between a our service provider and customers that define the use of the service. <br> To view our terms and conditions, click <a href='http://localhost:3000/terms-and-conditions' target='_blank'>here</a>.",
+    ID: "flush-headingTen",
+    TARGET: "#flush-collapseTen",
+    ARIA_CONTROLS: "flush-collapseTen",
   },
   {
     QUESTION: "What are the shipping options?",
-    ANSWER: "In our shop, we offer free shipping for orders above 200$. For orders below 200$, we charge a shipping fee of 10$. Our shipping options are standard shipping and express shipping by DHL and FedEx.",
-    ID: 'flush-headingEleven',
-    TARGET: '#flush-collapseEleven',
-    ARIA_CONTROLS: 'flush-collapseEleven',
+    ANSWER:
+      "In our shop, we offer free shipping for orders above 200$. For orders below 200$, we charge a shipping fee of 10$. Our shipping options are standard shipping and express shipping by DHL and FedEx.",
+    ID: "flush-headingEleven",
+    TARGET: "#flush-collapseEleven",
+    ARIA_CONTROLS: "flush-collapseEleven",
   },
   {
     QUESTION: "What are the payment options?",
-    ANSWER: "In our shop, we offer payment options such as credit card, debit card, PayPal, and bank transfer. We accept Visa, MasterCard, American Express, and Discover cards",
-    ID: 'flush-headingTwelve',
-    TARGET: '#flush-collapseTwelve',
-    ARIA_CONTROLS: 'flush-collapseTwelve',
-  }
-]
+    ANSWER:
+      "In our shop, we offer payment options such as credit card, debit card, PayPal, and bank transfer. We accept Visa, MasterCard, American Express, and Discover cards",
+    ID: "flush-headingTwelve",
+    TARGET: "#flush-collapseTwelve",
+    ARIA_CONTROLS: "flush-collapseTwelve",
+  },
+];
+
+export const MENU_SECTION = [
+  {
+    TITLE: "Home",
+    LINK: "/",
+    IMAGE: "",
+    DESC: "Hi, I'm a description",
+    DISCOUNT: true,
+    DISCOUNT_PRICE: "20% OFF",
+    PRICE: "10$",
+  },
+  {
+    TITLE: "Home",
+    LINK: "/",
+    IMAGE: "",
+    DESC: "Hi, I'm a description",
+    DISCOUNT: true,
+    DISCOUNT_PRICE: "20% OFF",
+    PRICE: "10$",
+  },
+  {
+    TITLE: "Home",
+    LINK: "/",
+    IMAGE: "",
+    DESC: "",
+    DISCOUNT: true,
+    DISCOUNT_PRICE: "20% OFF",
+    PRICE: "",
+  },
+  {
+    TITLE: "Home",
+    LINK: "/",
+    IMAGE: "",
+    DESC: "",
+    DISCOUNT: false,
+    DISCOUNT_PRICE: "",
+    PRICE: "",
+  },
+  {
+    TITLE: "Home",
+    LINK: "/",
+    IMAGE: "",
+    DESC: "",
+    DISCOUNT: false,
+    DISCOUNT_PRICE: "",
+    PRICE: "",
+  },
+  {
+    TITLE: "Home",
+    LINK: "/",
+    IMAGE: "",
+    DESC: "",
+    DISCOUNT: false,
+    DISCOUNT_PRICE: "",
+    PRICE: "",
+  },
+  {
+    TITLE: "See All",
+    LINK: "/",
+    TYPE: SEE_ALL,
+  },
+];

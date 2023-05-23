@@ -1,0 +1,16 @@
+.carousel {
+  width: 100%;
+  height: 600px;
+  background-color: var(--color-primary-variant-3);
+}
+
+.carousel-img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 600px;
+}

@@ -1,0 +1,117 @@
+.menu-see-more {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.see-more-link {
+  color: var(--color-secondary-variant-2);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.see-more-link:hover {
+  color: var(--color-black-text);
+  transition: 0.5s ease;
+}
+
+.icons-see-more {
+  color: var(--color-secondary-variant-2);
+}
+
+.icons-see-more :hover {
+  color: var(--color-black-text);
+  transition: 0.5s ease;
+}
+
+.menu {
+  height: 450px;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.menu::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+div.menu::-webkit-scrollbar-thumb {
+  background: var(--color-primary-variant-3); 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+div.menu::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary-variant-3);
+}
+
+
+.topSale-item {
+  float: none;
+  display: inline-block;
+  margin-top: 25px;
+  height: 400px;
+  width: 400px;
+  background-color: var(--color-primary-variant-3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.topSale-item:hover {
+  transition: 0.5s ease;
+  transform: scale(1.05);
+}
+
+.topSale-item-discount {
+  background-color: rgb(230, 51, 51);
+  color: var(--color-white-text);
+  padding: 5px 10px;
+  font-size: 0.7rem;
+}
+
+.menu-img {
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+}
+.topSale-item-img {
+  margin-bottom: 20px;
+}
+.topSale-item-name h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.topSale-item-name p {
+  font-size: 0.8rem;
+}
+
+.topSale-item-name span {
+  font-size: 1rem;
+}
+
+.topSale-item-see-all {
+  padding: 40px;
+  font-size: 2rem;
+  color: var(--color-secondary-variant-1);
+  margin-top: 25px;
+  height: 400px;
+  width: 400px;
+  background-color: var(--color-primary-variant-3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.topSale-item-see-all:hover {
+  transition: 0.5s ease;
+  background-color: var(--color-secondary-variant-1);
+  color: var(--color-white-text);
+}
