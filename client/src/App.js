@@ -22,6 +22,7 @@ import ReturnRefund from "./features/Dropdown-menu/Return-and-refund/Return-and-
 import PaymentAndPricing from "./features/Dropdown-menu/Payment-and-pricing/Payment-and-pricing";
 import Homepage from "./features/homepage/homepage";
 import NotFound from "./components/Not-found/Not-Found";
+import OurStore from "./features/our-store/our-store";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         </div>
 
         {/* content */}
-        <div className="content">
+        <div className="content m-0">
           <Routes>
             {/* authentication */}
             <Route path="/login" element={<Loginpage />} />
@@ -56,6 +57,7 @@ function App() {
             {/* mainpage */}
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/our-store" element={<OurStore />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="*" element={<NotFound />} />
 
