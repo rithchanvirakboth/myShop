@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const fetchAllUsers = async (token) => {
     const res = await axios.get('/user/allUsers', {
-        headers: { Authorization: token }
+        headers: {Authorization: token}
     })
     return res
 }

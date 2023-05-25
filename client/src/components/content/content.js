@@ -21,6 +21,7 @@ import Homepage from "../../features/homepage/homepage";
 import NotFound from "../Not-found/Not-Found";
 import OurStore from "../../features/our-store/our-store";
 import MaleCategory from "../../features/our-store/Components/Male-category/Male-category";
+import Setting from "../../features/Dropdown-menu/Setting/Setting";
 
 
 function Content() {
@@ -59,6 +60,7 @@ function Content() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/return-and-refund" element={<ReturnRefund />} />
         <Route path="/payment-and-pricing" element={<PaymentAndPricing />} />
+        <Route path="/setting" element={<Setting />} />
 
         {/* Sub page / about */}
         <Route path="/about/who-we-are" element={<WhoWeAre />} />
