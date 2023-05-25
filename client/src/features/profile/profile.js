@@ -1,6 +1,9 @@
 import React from "react";
 
+
 function Profile() {
+
+
   return (
     <div className="d-flex justify-content-center">
       <div className="col-10">

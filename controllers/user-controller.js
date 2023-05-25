@@ -32,7 +32,22 @@ const UserController = {
 
       const hashedPassword = await bcrypt.hash(password, 12);
       
-      const newUser = {
+      // const newUser = new {
+      //   firstname,
+      //   lastname,
+      //   username,
+      //   email,
+      //   password: hashedPassword,
+      //   confirmPassword: hashedPassword,
+      //   birthDate,
+      // }
+      // const activation_token = createActivationToken(newUser);
+      // const CLIENT_URL = process.env.CLIENT_URL;
+
+      // const url = `${CLIENT_URL}/user/activate/${activation_token}`;
+      // sendMail(email, url, "Verify your email address");
+
+      const newUser = new User({
         firstname,
         lastname,
         username,
@@ -40,12 +55,9 @@ const UserController = {
         password: hashedPassword,
         confirmPassword: hashedPassword,
         birthDate,
-      }
-      const activation_token = createActivationToken(newUser);
-      const CLIENT_URL = process.env.CLIENT_URL;
+      });
 
-      const url = `${CLIENT_URL}/user/activate/${activation_token}`;
-      sendMail(email, url, "Verify your email address");
+      await newUser.save();
       
       res.json({ successMessage: "Register Success! Please activate your email to start." });
     } catch (err) {

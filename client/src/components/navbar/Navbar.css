@@ -27,3 +27,18 @@
 .navbar {
   background-color: var(--color-primary-variant-2);
 }
+
+.btn-sign-in {
+  border: none;
+  color: var(--color-secondary-variant-1);
+  font-weight: bold;
+  font-size: 1rem;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-sign-in:hover {
+  color: var(--color-secondary-variant-3);
+  transition: 0.4s ease-in-out;
+  letter-spacing: 2px;
+}

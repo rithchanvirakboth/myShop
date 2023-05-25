@@ -86,6 +86,10 @@ export const PROFILE_DROPDOWN_MENU = {
 };
 
 export const NAVBAR_MENU = {
+  SIGN_IN : {
+    NAME: "SIGN IN",
+    LINK: "/login",
+  },
   HOME: {
     NAME: "HOME",
     LINK: "/",
@@ -635,3 +639,4 @@ export const MENU_SECTION = [
     TYPE: SEE_ALL,
   },
 ];
+
