@@ -33,3 +33,15 @@
 .btn-nav svg {
   margin-top: 5px;
 }
+.tab-pane {
+  padding: 50px 0px 50px 0px;
+  min-height: 43.5vh;
+}
+
+.inconvenience-message{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: crimson;
+  text-align: center;
+  margin-top: 50px;
+}

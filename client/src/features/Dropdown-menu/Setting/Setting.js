@@ -175,7 +175,76 @@ function Setting() {
                     role="tabpanel"
                     aria-labelledby="v-pills-edit-tab"
                   >
-                    edit
+                    <div className="container">
+                      <div className="d-flex justify-content-center">
+                        <div className="col-6 col-lg-6">
+                          <div className="row">
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="setting-header">
+                                <h3 className="text-center">Edit Profile</h3>
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="form-group">
+                                <label htmlFor="name">First Name</label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="firstname"
+                                  placeholder="Enter your first name"
+                                  name="firstname"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="form-group">
+                                <label htmlFor="name">Last Name</label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="lastname"
+                                  placeholder="Enter your last name"
+                                  name="lastname"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="form-group">
+                                <label htmlFor="name">Username</label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="username"
+                                  placeholder="Enter your username"
+                                  name="username"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="form-group">
+                                <label htmlFor="name">Date of Birth</label>
+                                <input
+                                  type="date"
+                                  className="form-control"
+                                  id="birthDate"
+                                  name="birthDate"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="button">
+                                <button
+                                  type="button"
+                                  className="btn btn-submit"
+                                >
+                                  Save
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div
@@ -184,7 +253,55 @@ function Setting() {
                     role="tabpanel"
                     aria-labelledby="v-pills-change-password-tab"
                   >
-                    change password
+                    <div className="container">
+                      <div className="d-flex justify-content-center">
+                        <div className="col-6 col-lg-6">
+                          <div className="row">
+                            <div className="col-12 col-lg-12">
+                              <div className="setting-header">
+                                <h3 className="text-center">Change Password</h3>
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-2">
+                              <div className="form-group">
+                                <label htmlFor="name">New Password</label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="password"
+                                  placeholder="Enter your new password"
+                                  name="password"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="form-group">
+                                <label htmlFor="name">
+                                  Confirmation Password
+                                </label>
+                                <input
+                                  type="text"
+                                  className="form-control"
+                                  id="confirmPassword"
+                                  placeholder="Re-enter your new password"
+                                  name="confirmPassword"
+                                />
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-4">
+                              <div className="button">
+                                <button
+                                  type="button"
+                                  className="btn btn-submit"
+                                >
+                                  Save
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     className="tab-pane fade"
@@ -192,7 +309,26 @@ function Setting() {
                     role="tabpanel"
                     aria-labelledby="v-pills-shipping-tab"
                   >
-                    shipping
+                    <div className="container">
+                      <div className="d-flex justify-content-center">
+                        <div className="col-9 col-lg-9">
+                          <div className="row">
+                            <div className="col-12 col-lg-12">
+                              <div className="setting-header">
+                                <h3 className="text-center">Shipping Method</h3>
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12">
+                              <span className="inconvenience-message text-center​">
+                                This feature is currently unavailable due to maintenance.
+                                We are sorry for the inconvenience. Please check back
+                                later. Thank you.
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
                     className="tab-pane fade"
@@ -200,7 +336,37 @@ function Setting() {
                     role="tabpanel"
                     aria-labelledby="v-pills-payment-method-tab"
                   >
-                    payment method
+                    <div className="container">
+                      <div className="d-flex justify-content-center">
+                        <div className="col-9 col-lg-9">
+                          <div className="row">
+                            <div className="col-12 col-lg-12">
+                              <div className="setting-header">
+                                <h3 className="text-center">Payment Method</h3>
+                              </div>
+                            </div>
+                            <div className="col-12 col-lg-12 mt-2">
+                              <span className="inconvenience-message text-center​">
+                                We are sorry for the inconvenience, but we are
+                                currently only accepting payment one payment
+                                method.**
+                              </span>
+                                <br />
+                                <br />
+                                <strong>Bank Transfer</strong>
+                                <br />
+                                <br />
+                                Bank Name: Bank Central Asia
+                                <br />
+                                Account Number: 1234567890
+                                <br />
+                                Account Holder: John Doe
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -237,7 +403,9 @@ function Setting() {
                           <path d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434l.071-.286zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5zm0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78h4.723zM5.048 3.967c-.03.021-.058.043-.087.065l.087-.065zm-.431.355A4.984 4.984 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8 4.617 4.322zm.344 7.646.087.065-.087-.065z" />
                         </svg>
                       </div>
-                      <div className="col-8 text-start mt-0 mt-md-2 mt-sm-2">Edit Profile</div>
+                      <div className="col-8 text-start mt-0 mt-md-2 mt-sm-2">
+                        Edit Profile
+                      </div>
                     </div>
                   </button>
                 </div>
@@ -350,7 +518,7 @@ function Setting() {
                 role="tabpanel"
                 aria-labelledby="nav-change-password-tab"
               >
-               change-password
+                change-password
               </div>
               <div
                 className="tab-pane fade show active"
@@ -358,7 +526,7 @@ function Setting() {
                 role="tabpanel"
                 aria-labelledby="nav-payment-method-tab"
               >
-               payment-method
+                payment-method
               </div>
               <div
                 className="tab-pane fade show active"
