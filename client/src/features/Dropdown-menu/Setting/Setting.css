@@ -38,6 +38,10 @@
   min-height: 43.5vh;
 }
 
+.btn-submit {
+  width: 100%
+}
+
 .inconvenience-message{
   font-size: 1.1rem;
   font-weight: 400;
