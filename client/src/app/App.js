@@ -1,4 +1,4 @@
-import Features from "./app/features/features";
+import Features from "./features/features";
 
 function App() {
   return (

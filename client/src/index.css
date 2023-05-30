@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" );
+
+/* Color */
+:root {
+  --color-primary-1: #FFFFFF;
+  --color-primary-2: #E7E7E7;
+  --color-primary-3: #D1D1D1;
+  --color-primary-4: #B6B6B6;
+  --color-primary-5: #9B9B9B;
+
+  --color-secondary-1: #DDDDDA;
+  --color-secondary-2: #C2C8C5;
+  --color-secondary-3: #94B0B7;
+  --color-secondary-4: #7697A0;
+  --color-secondary-5: #4A707A;
+
+  /* text color */
+  --color-text-white: #FFFFFF;
+  --color-text-grey: #9B9B9B;
+  --color-text-grey-2: #828282; 
+  --color-text-grey-3: #4F4F4F;
+  --color-text-grey-4: #333333;
+  --color-text-black: #000000;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Module imported */
+@import url('./app/features/features.css');
+@import url('./app/core/core.css');
+@import url('./app/admin/admin.css');
+
+/* CSS globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
 }
+
+
+
+/* Reusable css */
+/* .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+} */
