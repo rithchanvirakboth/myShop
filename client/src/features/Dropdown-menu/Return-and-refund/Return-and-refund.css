@@ -1,8 +1,0 @@
-.go-back-link {
-  font-size: 20px;
-  color: #000000;
-}
-
-.go-back-link:hover {
-  color: var(--color-secondary-variant-1);
-}
